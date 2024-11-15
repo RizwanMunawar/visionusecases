@@ -2,8 +2,15 @@ site_name: Computer Vision Use Cases
 theme:
   name: material
   custom_dir: docs/assets
+  features:
+    - navigation.tabs  # Enable tabs in the navigation bar
+    - navigation.tracking  # Highlight the current section in the navbar
+    - navigation.sections  # Group navigation items into sections
 markdown_extensions:
   - toc
+  - tables
+  - admonition  # For callouts
+  - codehilite  # Syntax highlighting
 nav:
   - Home: index.md
 extra_css:
