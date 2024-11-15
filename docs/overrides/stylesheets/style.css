@@ -19,3 +19,12 @@
   border-bottom: 2px solid #111E68;
 }
 
+/* Hide the vertical sidebar */
+.md-sidebar {
+    display: none;
+}
+
+/* Adjust the content area to take up the full width */
+.md-content {
+    margin-left: 0;
+}
