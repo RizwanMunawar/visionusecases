@@ -3,8 +3,6 @@ name: Deploy Computer Vision UseCases Docs
 # Trigger the workflow on push to specific files
 on:
   push:
-    paths:
-      - 'docs/**'  # Trigger when any files in the 'docs' folder are updated
     branches:
       - main
 
