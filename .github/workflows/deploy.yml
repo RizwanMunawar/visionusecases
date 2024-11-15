@@ -39,3 +39,4 @@ jobs:
         with:
           personal_token: ${{ secrets.PAT_TOKEN }}  # Use your PAT from secrets
           publish_dir: ./site  # The default directory for MkDocs build
+          publish_branch: computer-vision-use-cases  # GitHub Pages will host from the 'gh-pages' branch
