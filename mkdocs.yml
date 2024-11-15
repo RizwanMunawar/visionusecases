@@ -80,7 +80,7 @@ extra_javascript:
 nav:
   - Home: index.md
   - Object Detection: index.md
-  - Object Tracking: index.md
-  - Object Counting: index.md
-  - Instance Segmentation: index.md
-  - Pose Estimation: index.md
+  - Object Tracking: object-tracking.md
+  - Object Counting: object-counting.md
+  - Instance Segmentation: instance-segmentation.md
+  - Pose Estimation: pose-estimation.md
