@@ -1,10 +1,10 @@
 name: Deploy MkDocs Site
 
-# Run the workflow whenever index.md is updated
+# Trigger the workflow on push to specific files
 on:
   push:
     paths:
-      - 'docs/index.md'  # Trigger only if index.md is updated
+      - 'docs/**'  # Trigger when any files in the 'docs' folder are updated
     branches:
       - main  # Replace 'main' with your default branch if different
 
@@ -21,7 +21,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'  # Use the version of Python compatible with MkDocs
+          python-version: '3.9'  # Compatible Python version for MkDocs
 
       # Step 3: Install dependencies
       - name: Install MkDocs and Dependencies
@@ -31,12 +31,12 @@ jobs:
 
       # Step 4: Build the MkDocs Site
       - name: Build MkDocs Site
-        run: mkdocs build
+        run: mkdocs build  # This generates the site into the 'site/' directory
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets.PAT_TOKEN }}  # Replace GITHUB_TOKEN with your PAT secret
-          publish_dir: ./site  # MkDocs generates the site in the "site" directory by default
-          publish_branch: computervision  # Change if you use a different branch for GitHub Pages
+          personal_token: ${{ secrets.PAT_TOKEN }}  # Use your PAT from secrets
+          publish_dir: ./site  # The default directory for MkDocs build
+          publish_branch: gh-pages  # GitHub Pages will host from the 'gh-pages' branch
