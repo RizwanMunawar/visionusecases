@@ -3,12 +3,6 @@
   justify-content: center;
 }
 
-/* Highlight active tab */
-.md-nav__link--active {
-  background-color: #111E68; /* Your desired color */
-  color: #ffffff;
-}
-
 /* Add hover effect */
 .md-nav__link:hover {
   color: #111E68;
