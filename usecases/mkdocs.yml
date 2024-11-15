@@ -1,0 +1,12 @@
+site_name: Computer Vision Use Cases
+theme:
+  name: material
+  custom_dir: docs/assets
+markdown_extensions:
+  - toc
+nav:
+  - Home: index.md
+extra_css:
+  - assets/css/custom.css
+extra_javascript:
+  - assets/js/custom.js
