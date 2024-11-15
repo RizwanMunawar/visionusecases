@@ -57,7 +57,7 @@ theme:
     - search.suggest
     - toc.follow
     - navigation.top
-    # - navigation.tabs
+    - navigation.tabs
     # - navigation.tabs.sticky
     # - navigation.prune
     # - navigation.footer
@@ -65,7 +65,7 @@ theme:
     # - navigation.instant
     # - navigation.instant.progress
     # - navigation.indexes
-    # - navigation.sections # navigation.expand or navigation.sections
+    - navigation.sections # navigation.expand or navigation.sections
     - content.tabs.link # all code tabs change simultaneously
 
 # Customization
