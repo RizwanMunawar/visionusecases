@@ -39,4 +39,4 @@ jobs:
         with:
           personal_token: ${{ secrets.PAT_TOKEN }}  # Replace GITHUB_TOKEN with your PAT secret
           publish_dir: ./site  # MkDocs generates the site in the "site" directory by default
-          publish_branch: computer-vision-usecases  # Change if you use a different branch for GitHub Pages
+          publish_branch: computervision  # Change if you use a different branch for GitHub Pages
