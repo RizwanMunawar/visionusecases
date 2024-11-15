@@ -1,4 +1,4 @@
-name: Deploy MkDocs Site
+name: Deploy Computer Vision UseCases Docs
 
 # Trigger the workflow on push to specific files
 on:
@@ -6,7 +6,7 @@ on:
     paths:
       - 'docs/**'  # Trigger when any files in the 'docs' folder are updated
     branches:
-      - main  # Replace 'main' with your default branch if different
+      - main
 
 jobs:
   deploy:
@@ -29,14 +29,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
-      # Step 4: Build the MkDocs Site
+      # Step 4: Build the Docs
       - name: Build MkDocs Site
         run: mkdocs build  # This generates the site into the 'site/' directory
 
-      # Step 5: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
+      # Step 5: Deploy Docs
+      - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.PAT_TOKEN }}  # Use your PAT from secrets
           publish_dir: ./site  # The default directory for MkDocs build
-          publish_branch: gh-pages  # GitHub Pages will host from the 'gh-pages' branch
