@@ -1,0 +1,38 @@
+name: Deploy MkDocs Site
+
+# Run the workflow whenever index.md is updated
+on:
+  push:
+    paths:
+      - 'docs/index.md'  # Trigger only if index.md is updated
+    branches:
+      - main  # Replace 'main' with your default branch if different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # Use the version of Python compatible with MkDocs
+
+      # Step 3: Install dependencies
+      - name: Install MkDocs and Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-material
+
+      # Step 4: Build and Deploy the MkDocs Site
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site  # MkDocs generates the site in the "site" directory by default
+          publish_branch: gh-pages  # Change if you use a different branch for GitHub Pages
