@@ -1,4 +1,4 @@
-# Welcome to Computer Vision Use Cases
+# Featured Computer Vision Use Cases and Projects using VisionAI Models
 
 ## Object Detection
 
