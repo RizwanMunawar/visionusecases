@@ -1,0 +1,21 @@
+/* Center navbar items */
+.md-header-nav {
+  justify-content: center;
+}
+
+/* Add hover effect */
+.md-nav__link:hover {
+  color: #111E68;
+  font-weight: bold;
+}
+
+/* Style dropdown menus */
+.md-nav__item--nested:hover > .md-nav__link {
+  color: #111E68;
+}
+
+/* Tab alignment tweaks */
+.md-tabs {
+  border-bottom: 2px solid #111E68;
+}
+
