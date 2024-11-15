@@ -2,7 +2,6 @@
 
 Welcome to the Use Case Showcase! Below are examples of different use cases, each demonstrated through a video.
 
-
 ## Use Case 2: Vehicle Counting
 <video controls width="800">
     <source src="videos/case2.mp4" type="video/mp4">
