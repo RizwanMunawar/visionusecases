@@ -29,10 +29,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
-      # Step 4: Build and Deploy the MkDocs Site
+      # Step 4: Build the MkDocs Site
+      - name: Build MkDocs Site
+        run: mkdocs build
+
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PAT_TOKEN }}  # Replace GITHUB_TOKEN with your PAT secret
           publish_dir: ./site  # MkDocs generates the site in the "site" directory by default
           publish_branch: computer-vision-usecases  # Change if you use a different branch for GitHub Pages
