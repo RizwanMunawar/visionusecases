@@ -3,7 +3,7 @@
 ## Object Detection
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;">
-  <div style="text-align: center; width: 49%;">
+  <div style="text-align: center; width: 48%;">
     <iframe width="100%" height="360" src="https://www.youtube.com/embed/VhzkygLZido" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
       clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div style="margin-top: 10px;">
@@ -13,7 +13,7 @@
 </div>
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;">
-  <div style="text-align: center; width: 49%;">
+  <div style="text-align: center; width: 48%;">
     <iframe width="100%" height="360" src="https://www.youtube.com/embed/KGyP10JOwvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
       clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div style="margin-top: 10px;">
@@ -25,7 +25,7 @@
 ## Image Segmentation
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;">
-  <div style="text-align: center; width: 49%;">
+  <div style="text-align: center; width: 48%;">
     <iframe width="100%" height="360" src="https://www.youtube.com/embed/9F0fry__HPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
       clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div style="margin-top: 10px;">
@@ -38,7 +38,7 @@
 ## Pose Estimation
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;">
-  <div style="text-align: center; width: 49%;">
+  <div style="text-align: center; width: 48%;">
     <iframe width="100%" height="360" src="https://www.youtube.com/embed/PmiWQgdTAuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
       clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div style="margin-top: 10px;">
@@ -50,7 +50,7 @@
 ## Object Counting
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;">
-  <div style="text-align: center; width: 49%;">
+  <div style="text-align: center; width: 48%;">
     <iframe width="100%" height="360" src="https://www.youtube.com/embed/g5Onls24Djg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
       clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div style="margin-top: 10px;">
@@ -60,7 +60,7 @@
 </div>
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;">
-  <div style="text-align: center; width: 49%;">
+  <div style="text-align: center; width: 48%;">
     <iframe width="100%" height="360" src="https://www.youtube.com/embed/eoOkYDJIDHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
       clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div style="margin-top: 10px;">
@@ -70,7 +70,7 @@
 </div>
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;">
-  <div style="text-align: center; width: 49%;">
+  <div style="text-align: center; width: 48%;">
     <iframe width="100%" height="360" src="https://www.youtube.com/embed/1qyxTP2U_Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
       clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div style="margin-top: 10px;">
