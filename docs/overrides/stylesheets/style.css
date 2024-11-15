@@ -28,3 +28,31 @@
 .md-content {
     margin-left: 0;
 }
+
+/* Add this CSS to your mkdocs theme styles */
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px; /* Adjust gap between cards */
+}
+
+.video-card {
+  flex: 1 1 calc(50% - 16px); /* Two cards side by side with gap */
+  max-width: calc(50% - 16px);
+}
+
+.video-card:nth-child(odd):not(:first-child) {
+  flex: 1 1 100%; /* Odd cards starting from 3rd take full width */
+  max-width: 100%;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 360px;
+}
+
+.video-card p {
+  text-align: center;
+  margin-top: 8px;
+}
