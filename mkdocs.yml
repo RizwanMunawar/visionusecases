@@ -9,9 +9,9 @@ site_name: Computer Vision UseCases
 site_description: Explore computer vision use cases and projects across various industries, including retail, transportation, medical imaging, manufacturing, agriculture, wildlife, and more, leveraging state-of-the-art models for object detection, image segmentation, object tracking, pose estimation, and beyond.
 site_url: https://rizwanmunawar.github.io/visionusecases/
 site_author: Muhammad Rizwan Munawar
-repo_url: https://github.com/ultralytics/ultralytics
+repo_url: https://github.com/RizwanMunawar/visionusecases
 edit_uri: https://github.com/ultralytics/ultralytics/tree/main/docs/en/
-repo_name: https://github.com/RizwanMunawar/visionusecases
+repo_name: Vision Use Cases
 remote_name: https://github.com/RizwanMunawar/visionusecases/docs
 docs_dir: "docs/" # where to find the markdown files
 site_dir: "site/" # where to publish to
@@ -101,6 +101,5 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
-
 nav:
   - Home: index.md
