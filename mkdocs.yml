@@ -1,19 +1,129 @@
-site_name: Computer Vision Use Cases
+# Computer Vision Use Cases Video Demos 🚀, AGPL-3.0 license
+
+# Configuration file for building the Computer Vision usecases documentation site using MkDocs.
+# Provides settings to control site metadata, customize the appearance using the
+# Material theme, define the navigation structure, and enable various plugins.
+
+# Site metadata
+site_name: Computer Vision UseCases
+site_description: Explore computer vision use cases and projects across various industries, including retail, transportation, medical imaging, manufacturing, agriculture, wildlife, and more, leveraging state-of-the-art models for object detection, image segmentation, object tracking, pose estimation, and beyond.
+site_url: https://rizwanmunawar.github.io/visionusecases/
+site_author: Muhammad Rizwan Munawar
+repo_url: https://github.com/ultralytics/ultralytics
+edit_uri: https://github.com/ultralytics/ultralytics/tree/main/docs/en/
+repo_name: https://github.com/RizwanMunawar/visionusecases
+remote_name: https://github.com/RizwanMunawar/visionusecases/docs
+docs_dir: "docs/" # where to find the markdown files
+site_dir: "site/" # where to publish to
+
+# Theme customization
 theme:
   name: material
-  custom_dir: docs/assets
+  language: en
+  custom_dir: docs/overrides/
+  logo: 
+  favicon:
+  icon:
+    repo: fontawesome/brands/github
+  # font:  # disabled for faster page load times
+  #  text: Helvetica
+  #  code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
-    - navigation.tabs  # Enable tabs in the navigation bar
-    - navigation.tracking  # Highlight the current section in the navbar
-    - navigation.sections  # Group navigation items into sections
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.prune
+    - navigation.footer
+    - navigation.tracking
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.indexes
+    - navigation.sections # navigation.expand or navigation.sections
+    - content.tabs.link # all code tabs change simultaneously
+
+# Customization
+copyright: <a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024 Computer Vision Use Cases.</a> All rights reserved.
+extra: # version:
+  #   provider: mike  #  version drop-down menu
+  robots: robots.txt
+  analytics:
+    provider: google
+    property: G-2M5EHKC0BH
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ultralytics
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ultralytics/
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/ultralytics
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/ultralytics?sub_confirmation=1
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/ultralytics/ultralytics/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/ultralytics/
+    - icon: fontawesome/brands/discord
+      link: https://ultralytics.com/discord
+    - icon: fontawesome/brands/reddit
+      link: https://reddit.com/r/ultralytics
+
+extra_css:
+  - stylesheets/style.css
+
+extra_javascript:
+  - javascript/extra.js
+  - javascript/giscus.js
+
 markdown_extensions:
-  - toc
+  - admonition
+  - md_in_html
   - tables
-  - admonition  # For callouts
-  - codehilite  # Syntax highlighting
+  - attr_list
+  - def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets:
+      base_path: ./
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+
 nav:
   - Home: index.md
-extra_css:
-  - assets/css/custom.css
-extra_javascript:
-  - assets/js/custom.js
