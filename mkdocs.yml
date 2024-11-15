@@ -76,29 +76,6 @@ extra_css:
 
 extra_javascript:
   - javascript/extra.js
-  - javascript/giscus.js
 
-# markdown_extensions:
-#   - admonition
-#   - md_in_html
-#   - attr_list
-#   - def_list
-#   - pymdownx.critic
-#   - pymdownx.caret
-#   - pymdownx.keys
-#   - pymdownx.mark
-#   - pymdownx.tilde
-#   - pymdownx.details
-#   - pymdownx.superfences
-#   - pymdownx.inlinehilite
-#   - pymdownx.highlight:
-#       anchor_linenums: true
-#   - pymdownx.snippets:
-#       base_path: ./
-#   - pymdownx.emoji:
-#       emoji_index: !!python/name:material.extensions.emoji.twemoji
-#       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-#   - pymdownx.tabbed:
-#       alternate_style: true
 nav:
   - Home: index.md
