@@ -111,3 +111,5 @@ plugins:
   - search
   - macros:
       module_name: macros
+  - sitemap:
+      sitemap_url: https://visionusecases.com/sitemap.xml
