@@ -21,7 +21,7 @@ theme:
   name: material
   language: en
   custom_dir: docs/overrides/
-  logo: 
+  logo: https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-colored-logo.png
   favicon:
   icon:
     repo: fontawesome/brands/github
