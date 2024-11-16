@@ -22,7 +22,7 @@ theme:
   language: en
   custom_dir: docs/overrides/
   logo: https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png
-  favicon:
+  favicon: https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases.ico
   icon:
     repo: fontawesome/brands/github
   # font:  # disabled for faster page load times
