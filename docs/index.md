@@ -1,6 +1,6 @@
 # Featured Computer Vision Use Cases and Projects with VisionAI Models | Object Detection, Segmentation, and More
 
-<p>Watch a quick overview of our top computer vision projects in action🚀</p>
+<p>Watch a quick overview of our top computer vision projects in action 🚀</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe src="https://drive.google.com/file/d/1SM8c07Cpplf0Mzx8bEtqeRToU_XqlbK4/preview" 
