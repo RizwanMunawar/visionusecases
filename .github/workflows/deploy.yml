@@ -25,7 +25,7 @@ jobs:
       - name: Install MkDocs and Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs-material mkdocs-macros-plugin
+          pip install mkdocs-material mkdocs-macros-plugin mkdocs-sitemap-plugin
 
       # Step 4: Build the Docs
       - name: Build MkDocs Site
