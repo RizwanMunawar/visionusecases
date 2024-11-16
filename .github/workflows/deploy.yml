@@ -1,6 +1,6 @@
 name: Deploy Computer Vision UseCases Docs
 
-# Trigger the workflow on push to specific files
+# Trigger the workflow on push to the 'main' branch
 on:
   push:
     branches:
@@ -31,10 +31,14 @@ jobs:
       - name: Build MkDocs Site
         run: mkdocs build  # This generates the site into the 'site/' directory
 
-      # Step 5: Deploy Docs
+      # Step 5: Add CNAME File
+      - name: Create CNAME File
+        run: echo "visionusecases.com" > site/CNAME
+
+      # Step 6: Deploy Docs
       - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.PAT_TOKEN }}  # Use your PAT from secrets
           publish_dir: ./site  # The default directory for MkDocs build
-          publish_branch: computer-vision-use-cases  # GitHub Pages will host from the 'gh-pages' branch
+          publish_branch: computer-vision-use-cases  # GitHub Pages will host from this branch
