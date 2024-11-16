@@ -1,4 +1,4 @@
-# Explore Real-World Computer Vision Use Cases with Advanced AI Models
+## Explore Real-World Computer Vision Use Cases with Advanced AI Models
 
 [![Deploy Computer Vision UseCases Docs](https://github.com/RizwanMunawar/visionusecases/actions/workflows/deploy.yml/badge.svg)](https://github.com/RizwanMunawar/visionusecases/actions/workflows/deploy.yml)
 
