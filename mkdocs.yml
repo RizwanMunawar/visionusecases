@@ -10,8 +10,8 @@ site_description: Explore computer vision use cases and projects across various 
 site_url: https://rizwanmunawar.github.io/visionusecases/
 site_author: Muhammad Rizwan Munawar
 repo_url: https://github.com/RizwanMunawar/visionusecases
-edit_uri: https://github.com/ultralytics/ultralytics/tree/main/docs/en/
-repo_name: Vision Use Cases
+edit_uri: https://github.com/RizwanMunawar/visionusecases/tree/main/docs
+repo_name: visionusecases
 remote_name: https://github.com/RizwanMunawar/visionusecases/docs
 docs_dir: "docs/" # where to find the markdown files
 site_dir: "site/" # where to publish to
@@ -105,9 +105,8 @@ nav:
       - Use Cases: pose/index.md
   - Object Counting:
       - Overview: count/index.md
-      - Use Cases: count/index.md
-
+      - Apple Counting on Conveyor Belt: count/apple-counting.md
+      - Item Counting in Trolleys for Smart Shopping: count/items-counting.md
+      - Bread Counting on Conveyor Belt: count/bread-counting.md
 plugins:
   - search
-  - macros:
-      module_name: macros
