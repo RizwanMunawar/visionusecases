@@ -41,3 +41,14 @@
   text-align: center;
   margin-top: 8px;
 }
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+  }
+  figcaption {
+    font-size: 16px;
+    color: #555;
+    font
+    margin-top: 8px;
+  }

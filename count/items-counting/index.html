@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Discover impactful object detection projects using Ultralytics YOLO models. Explore applications in waste management, industrial automation, and security systems, featuring cutting-edge techniques and real-world implementations.">
+        <meta name="description" content="Learn how Ultralytics YOLO11 is transforming retail with item counting in shopping trolleys, automating checkouts, optimizing inventory management, and providing actionable customer insights.">
       
       
         <meta name="author" content="Muhammad Rizwan Munawar">
       
       
-        <link rel="canonical" href="https://rizwanmunawar.github.io/visionusecases/detect/">
+        <link rel="canonical" href="https://rizwanmunawar.github.io/visionusecases/count/items-counting/">
       
       
-        <link rel="prev" href="./">
+        <link rel="prev" href="../apple-counting/">
       
       
-        <link rel="next" href="../segment/">
+        <link rel="next" href="../bread-counting/">
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases.ico">
@@ -26,14 +26,14 @@
     
     
       
-        <title>Object Detection - Computer Vision Use Cases</title>
+        <title>Item Counting in Trolleys for Smart Shopping - Computer Vision Use Cases</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/style.css">
+      <link rel="stylesheet" href="../../stylesheets/style.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#object-detection-unleashing-computer-vision-potential" class="md-skip">
+        <a href="#item-counting-in-trolleys-for-smart-shopping-using-ultralytics-yolo11" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Computer Vision Use Cases" class="md-header__button md-logo" aria-label="Computer Vision Use Cases" data-md-component="logo">
+    <a href="../.." title="Computer Vision Use Cases" class="md-header__button md-logo" aria-label="Computer Vision Use Cases" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png" alt="logo">
 
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Object Detection
+              Item Counting in Trolleys for Smart Shopping
             
           </span>
         </div>
@@ -245,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -261,13 +261,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../detect/" class="md-tabs__link">
           
   
     
@@ -287,7 +285,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../segment/" class="md-tabs__link">
+        <a href="../../segment/" class="md-tabs__link">
           
   
     
@@ -307,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../track/" class="md-tabs__link">
+        <a href="../../track/" class="md-tabs__link">
           
   
     
@@ -327,7 +325,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../pose/" class="md-tabs__link">
+        <a href="../../pose/" class="md-tabs__link">
           
   
     
@@ -343,11 +341,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../count/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -388,7 +388,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Computer Vision Use Cases" class="md-nav__button md-logo" aria-label="Computer Vision Use Cases" data-md-component="logo">
+    <a href="../.." title="Computer Vision Use Cases" class="md-nav__button md-logo" aria-label="Computer Vision Use Cases" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png" alt="logo">
 
@@ -461,7 +461,7 @@
         
   
   
-    <a href=".." class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -475,82 +475,6 @@
     </a>
   
 
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-          
-        
-      
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
-              
-  
-  <span class="md-ellipsis">
-    Object Detection
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Object Detection
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -591,7 +515,61 @@
         
   
   
-    <a href="../segment/" class="md-nav__link">
+    <a href="../../detect/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Object Detection
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../segment/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -645,7 +623,7 @@
         
   
   
-    <a href="../track/" class="md-nav__link">
+    <a href="../../track/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -699,7 +677,7 @@
         
   
   
-    <a href="../pose/" class="md-nav__link">
+    <a href="../../pose/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -722,6 +700,8 @@
       
   
   
+    
+  
   
   
     
@@ -740,35 +720,183 @@
     
     
       
+        
+        
+      
       
         
       
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
-  
-  
-    <a href="../count/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Object Counting
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Object Counting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apple-counting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apple Counting on Conveyor Belt
+  </span>
   
 
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Item Counting in Trolleys for Smart Shopping
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Item Counting in Trolleys for Smart Shopping
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-model-and-dataset-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware, Model, and Dataset Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications-for-item-counting-in-retail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications for Item Counting in Retail
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bread-counting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bread Counting on Conveyor Belt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -801,9 +929,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#object-detection-projects-bounding-boxes" class="md-nav__link">
+  <a href="#hardware-model-and-dataset-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Object Detection Projects | Bounding Boxes
+      Hardware, Model, and Dataset Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications-for-item-counting-in-retail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications for Item Counting in Retail
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Resources
     </span>
   </a>
   
@@ -824,7 +970,7 @@
                   
 
   
-    <a href="https://github.com/RizwanMunawar/visionusecases/tree/main/docs/detect/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/RizwanMunawar/visionusecases/tree/main/docs/count/items-counting.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -832,13 +978,26 @@
   
 
 
-<h1 id="object-detection-unleashing-computer-vision-potential">Object Detection | Unleashing Computer Vision Potential</h1>
-<p>Object detection is a cornerstone of computer vision, designed to identify and pinpoint objects within images or video streams. By combining classification and localization, it determines object types and precisely marks their positions with bounding boxes. This technology is widely employed in fields such as autonomous vehicles, security systems, and industrial operations.  </p>
-<p>Explore our impactful object detection projects, showcasing cutting-edge techniques and practical implementations:  </p>
-<h2 id="object-detection-projects-bounding-boxes">Object Detection Projects | Bounding Boxes</h2>
+<h1 id="item-counting-in-trolleys-for-smart-shopping-using-ultralytics-yolo11">Item Counting in Trolleys for Smart Shopping Using Ultralytics YOLO11</h1>
+<p>Efficiently counting items in shopping trolleys can transform the retail industry by automating checkout processes, minimizing errors, and enhancing customer convenience. By leveraging computer vision and AI, this solution enables real-time item detection and counting, ensuring accuracy and efficiency.  </p>
+<h2 id="hardware-model-and-dataset-information">Hardware, Model, and Dataset Information</h2>
 <ul>
-<li><strong>Waste Detection: 🚀</strong> Learn how state-of-the-art object detection models like Ultralytics YOLO11 and YOLOv9 are transforming waste management processes, improving efficiency and sustainability. <a href="https://youtu.be/VhzkygLZido"><img alt="Watch Demo" src="https://img.shields.io/badge/Watch-Demo-blue?style=flat-square" title="Watch the Demo Video" /></a></li>
-<li><strong>Industrial Package Identification: 📦</strong> Discover how advanced detection models such as Ultralytics YOLO11, YOLOv10, or YOLOv8 enable precise package detection in industrial workflows, enhancing automation and accuracy. <a href="https://youtu.be/KGyP10JOwvw"><img alt="Watch Demo" src="https://img.shields.io/badge/Watch-Demo-blue?style=flat-square" title="Watch the Demo Video" /></a>  </li>
+<li><strong>CPU</strong>: Intel® Core™ i5-10400 CPU @ 2.90GHz.  </li>
+<li><strong>GPU</strong>: NVIDIA RTX 3050 for seamless real-time processing.  </li>
+<li><strong>RAM</strong>: 64 GB RAM with a 1TB Hard Disk for large-scale data handling.  </li>
+<li><strong>Model</strong>: The solution utilizes a fine-tuned Ultralytics YOLO11 model, optimized for object detection and item counting.  </li>
+<li><strong>Dataset</strong>: A proprietary dataset was annotated in-house, tailored specifically for this application.  </li>
+</ul>
+<h2 id="real-world-applications-for-item-counting-in-retail">Real-World Applications for Item Counting in Retail</h2>
+<ul>
+<li><strong>Smart Checkouts:</strong> Automating item counting in shopping trolleys ensures fast and error-free billing, enhancing the overall customer experience.  </li>
+<li><strong>Inventory Management:</strong> Provides real-time updates on stock levels, enabling retailers to optimize inventory restocking and reduce shortages.  </li>
+<li><strong>Data Insights:</strong> Enables retailers to gather valuable data on customer purchasing trends, aiding in personalized marketing and inventory forecasting.  </li>
+</ul>
+<h2 id="social-resources">Social Resources</h2>
+<ul>
+<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7262010373703131136">LinkedIn Post: Transforming Retail with Item Counting in Trolley using YOLO11</a>  </li>
+<li><a href="https://x.com/muhammdrizwanmr/status/1856979354867437708">Twitter Thread: Revolutionizing Shopping Trolleys with YOLO11</a>  </li>
 </ul>
 
 
@@ -882,7 +1041,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="./" class="md-footer__link md-footer__link--prev" aria-label="Previous: Object Detection">
+          <a href="../apple-counting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Apple Counting on Conveyor Belt">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -892,20 +1051,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Object Detection
+                Apple Counting on Conveyor Belt
               </div>
             </div>
           </a>
         
         
           
-          <a href="../segment/" class="md-footer__link md-footer__link--next" aria-label="Next: Instance Segmentation">
+          <a href="../bread-counting/" class="md-footer__link md-footer__link--next" aria-label="Next: Bread Counting on Conveyor Belt">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Instance Segmentation
+                Bread Counting on Conveyor Belt
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -945,12 +1104,12 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.tooltips", "search.highlight", "search.share", "search.suggest", "toc.follow", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.footer", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.sections", "content.tabs.link"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.tooltips", "search.highlight", "search.share", "search.suggest", "toc.follow", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.footer", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.sections", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="../javascript/extra.js"></script>
+        <script src="../../javascript/extra.js"></script>
       
     
   </body>
