@@ -114,6 +114,7 @@ nav:
       - Overview: datasets/index.md
 plugins:
   - search
+  - include-markdown
   - git-authors:
       github_usernames:
         muhammadrizwanmunawar123@gmail.com: RizwanMunawar
