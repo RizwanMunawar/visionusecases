@@ -13,7 +13,7 @@ def inject_plugin_into_mkdocs():
     # Define the plugin configuration to be added
     plugin_config = {
         "git-authors": {
-            "github_usernames": authors_data
+            "mapping": authors_data
         }
     }
 
@@ -41,6 +41,7 @@ def inject_plugin_into_mkdocs():
         yaml.dump(mkdocs_config, f, default_flow_style=False)
 
     print("Injected git-authors plugin into mkdocs.yml")
+
 
 if __name__ == "__main__":
     inject_plugin_into_mkdocs()

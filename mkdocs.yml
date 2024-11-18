@@ -115,4 +115,4 @@ plugins:
   - search
   - include-markdown
   - git-authors:
-      github_usernames:
+      mapping:
