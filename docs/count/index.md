@@ -15,3 +15,5 @@ Explore our awesome object counting projects, where few of them are from our gre
 - **[Apples Counting on Conveyor Belt](apple-counting.md): 🍎** Learn how to count apples with precision using Ultralytics YOLO models for better inventory management. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
 - **[Items Counting in Shopping Trolley](items-counting.md): 🛒** See how we track and count items in shopping trolleys with cutting-edge detection models, streamlining retail operations. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
 - **[Bread Counting on Conveyor Belt](bread-counting.md): 🍞** Discover how to ensure accurate bread counts on conveyor belts with Ultralytics YOLO models, boosting production efficiency. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
+
+<div id="giscus-container"></div>

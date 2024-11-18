@@ -34,3 +34,5 @@ Efficiently counting items in shopping trolleys can transform the retail industr
 
 - [LinkedIn Post: Transforming Retail with Item Counting in Trolley using YOLO11](https://www.linkedin.com/feed/update/urn:li:activity:7262010373703131136)  
 - [Twitter Thread: Revolutionizing Shopping Trolleys with YOLO11](https://x.com/muhammdrizwanmr/status/1856979354867437708)  
+
+<div id="giscus-container"></div>

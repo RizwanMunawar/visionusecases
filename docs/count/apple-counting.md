@@ -36,3 +36,5 @@ Accurate counting of apples in agricultural setups plays a significant role in y
 
 - [LinkedIn Post: Revolutionizing Apple Counting with Ultralytics YOLO11](https://www.linkedin.com/feed/update/urn:li:activity:7262376284427616256/)
 - [Twitter Thread: Counting Apples in Agriculture](https://x.com/muhammdrizwanmr/status/1857345522555551843)
+
+<div id="giscus-container"></div>
