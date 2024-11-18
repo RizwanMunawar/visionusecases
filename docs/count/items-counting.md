@@ -8,6 +8,14 @@ keywords: item counting, smart shopping, trolley automation, Ultralytics YOLO11,
 
 Efficiently counting items in shopping trolleys can transform the retail industry by automating checkout processes, minimizing errors, and enhancing customer convenience. By leveraging computer vision and AI, this solution enables real-time item detection and counting, ensuring accuracy and efficiency.  
 
+<div style="position: relative; width: 100%; max-width: 640px; margin: auto;">
+  <iframe src="https://drive.google.com/file/d/1xnZvZG3jkSOIrn64ONczBjTFBpf1m0Qc/preview" 
+          style="width: 100%; height: 360px; border: none;" 
+          allow="autoplay"></iframe>
+  <span style="display: block; text-align: center; margin-top: 10px; font-size: 16px; color: #555;">
+    Item Counting in Trolleys for Smart Shopping using Ultralytics YOLO11</span>
+</div>
+
 ## Hardware, Model, and Dataset Information  
 
 - **CPU**: Intel® Core™ i5-10400 CPU @ 2.90GHz.  

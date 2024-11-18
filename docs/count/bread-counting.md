@@ -8,6 +8,14 @@ keywords: bread counting, conveyor belt automation, Ultralytics YOLO11, bakery a
 
 Automating bread counting on conveyor belts enhances efficiency in bakeries, ensuring accurate packaging, minimizing wastage, and optimizing production workflows. Leveraging Ultralytics YOLO11 for object detection, this solution streamlines the bread production process with precision and speed.  
 
+<div style="position: relative; width: 100%; max-width: 640px; margin: auto;">
+  <iframe src="https://drive.google.com/file/d/1GdFP4AUjQaOekp6zar9d2_Vd0W_oZuJj/preview" 
+          style="width: 100%; height: 360px; border: none;" 
+          allow="autoplay"></iframe>
+  <span style="display: block; text-align: center; margin-top: 10px; font-size: 16px; color: #555;">
+    Bread Counting on Conveyor Belt using Ultralytics YOLO11</span>
+</div>
+
 ## Hardware, Model, and Dataset Information  
 
 - **CPU**: Intel® Core™ i5-10400 CPU @ 2.90GHz.  
