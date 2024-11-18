@@ -161,5 +161,3 @@ The tracking module goes beyond detection by monitoring objects across video fra
 ### Can the Object Counting implementation handle dynamic environments?
 
 Yes, the Object Counting implementation is designed for dynamic settings, like conveyor belts or crowded scenes, by accurately detecting and counting objects in real-time, ensuring operational efficiency.
-
-<div id="giscus-container"></div>

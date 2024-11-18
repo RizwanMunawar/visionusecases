@@ -33,6 +33,4 @@ Automating bread counting on conveyor belts enhances efficiency in bakeries, ens
 ## Social Resources  
 
 - [LinkedIn Post: Automating Bread Counting with YOLO11](https://www.linkedin.com/feed/update/urn:li:activity:7256584990828679168)  
-- [Twitter Thread: Bread Counting Revolution on Conveyor Belts](https://x.com/muhammdrizwanmr/status/1856250521147060381)  
-
-<div id="giscus-container"></div>
+- [Twitter Thread: Bread Counting Revolution on Conveyor Belts](https://x.com/muhammdrizwanmr/status/1856250521147060381)

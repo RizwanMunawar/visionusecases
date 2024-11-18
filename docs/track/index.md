@@ -12,6 +12,4 @@ Dive into our advanced object tracking projects, highlighting technical expertis
 
 ## Projects Overview
 
-- **Vehicle Tracking: 🚗** Discover how to achieve precise vehicle tracking using YOLOv10, YOLOv9, or YOLOv8, transforming traffic management and fleet monitoring systems. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/gUMvcrFeVUg)  
-
-<div id="giscus-container"></div>
+- **Vehicle Tracking: 🚗** Discover how to achieve precise vehicle tracking using YOLOv10, YOLOv9, or YOLOv8, transforming traffic management and fleet monitoring systems. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/gUMvcrFeVUg)

@@ -1,6 +1,5 @@
 name: Deploy Computer Vision UseCases Docs
 
-# Trigger the workflow on push to the 'main' branch
 on:
   push:
     branches:
@@ -25,7 +24,11 @@ jobs:
       - name: Install MkDocs and Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs-material
+          pip install mkdocs-material mkdocs-git-authors-plugin
+
+      # Step 4: Generate authors
+      - name: Generate Authors
+        run: python fetch_authors.py
 
       # Step 4: Build the Docs
       - name: Build MkDocs Site

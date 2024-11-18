@@ -71,6 +71,7 @@ theme:
 # Customization
 copyright: <a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024 Computer Vision Use Cases.</a> All rights reserved.
 extra: # version:
+  authors: !include authors.json
   #   provider: mike  #  version drop-down menu
   robots: robots.txt
   analytics:
@@ -109,5 +110,10 @@ nav:
       - Apple Counting on Conveyor Belt: count/apple-counting.md
       - Item Counting in Trolleys for Smart Shopping: count/items-counting.md
       - Bread Counting on Conveyor Belt: count/bread-counting.md
+  - Computer Vision Datasets:
+      - Overview: datasets/index.md
 plugins:
   - search
+  - git-authors:
+      github_usernames:
+        muhammadrizwanmunawar123@gmail.com: RizwanMunawar
