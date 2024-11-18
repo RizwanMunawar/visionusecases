@@ -113,6 +113,4 @@ nav:
       - Overview: datasets/index.md
 plugins:
   - search
-  - include-markdown
-  - git-authors:
-      mapping:
+  - git-authors
