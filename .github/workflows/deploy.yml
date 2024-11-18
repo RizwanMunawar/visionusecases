@@ -24,7 +24,7 @@ jobs:
       - name: Install MkDocs and Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs-material mkdocs-git-authors-plugin
+          pip install mkdocs-material mkdocs-git-authors-plugin mkdocs-include-markdown-plugin
 
       # Step 4: Generate authors
       - name: Generate Authors
