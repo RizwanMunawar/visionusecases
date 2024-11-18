@@ -116,4 +116,3 @@ plugins:
   - include-markdown
   - git-authors:
       github_usernames:
-        muhammadrizwanmunawar123@gmail.com: RizwanMunawar
