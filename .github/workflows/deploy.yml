@@ -22,11 +22,12 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install MkDocs and Dependencies
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           python -m pip install --upgrade pip
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-          python fetch_authors.py
           pip install mkdocs-material mkdocs-git-authors-plugin mkdocs-include-markdown-plugin
+          python fetch_authors.py
           python update_authors.py
 
       # Step 4: Build the Docs
