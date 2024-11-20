@@ -1,6 +1,6 @@
 ---
 comments: true
-description: Discover our featured computer vision use cases and projects with VisionAI models, showcasing object detection, tracking, segmentation, pose estimation, and counting for real-world applications in diverse industries.
+description: Discover computer vision use cases and projects with VisionAI models, including object detection, tracking, segmentation, pose estimation, and counting for diverse industries.
 keywords: computer vision, object detection, object tracking, pose estimation, image segmentation, object counting, Ultralytics YOLO, AI projects, industrial automation, real-world applications, VisionAI models
 ---
 
