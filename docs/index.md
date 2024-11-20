@@ -8,10 +8,9 @@ keywords: computer vision, object detection, object tracking, pose estimation, i
 
 <p>Watch a quick overview of our top computer vision projects in action 🚀</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+<div class="embed-container">
   <iframe src="https://drive.google.com/file/d/1MQpoNwFQUXAh7vCcz8oQ_ymYAB0AAR-x/preview" 
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-          frameborder="0" allow="autoplay">
+          allow="autoplay">
   </iframe>
 </div>
 

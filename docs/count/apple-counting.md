@@ -8,13 +8,13 @@ keywords: apple counting, conveyor belt automation, Ultralytics YOLO11, fruit co
 
 Accurate counting of apples in agricultural setups plays a significant role in yield estimation, supply chain optimization, and resource planning. Leveraging computer vision and AI, we can automate this process with impressive accuracy and efficiency.
 
-<div style="position: relative; width: 100%; max-width: 640px; margin: auto;">
+<div class="embed-wrapper">
   <iframe src="https://drive.google.com/file/d/11RrbuQRRbfG57Id6cUdH3ZKFFA3S2aER/preview" 
-          style="width: 640px; height: 360px; border: none;" 
-          allow="autoplay"></iframe>
-  <span style="display: block; text-align: center; margin-top: 10px; font-size: 16px; color: #555;">
-    Apple Counting on Conveyor Belt using Ultralytics YOLO11</span>
+          allow="autoplay">
+  </iframe>
+  <span>Apple Counting on Conveyor Belt using Ultralytics YOLO11</span>
 </div>
+
 
 
 ## Hardware, Model and Dataset Information
