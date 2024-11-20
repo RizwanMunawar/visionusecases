@@ -953,13 +953,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-example" class="md-nav__link">
+  <a href="#how-to-generate-segmentation-masks" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Example
+      How to Generate Segmentation Masks
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Code Example">
+    <nav class="md-nav" aria-label="How to Generate Segmentation Masks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -972,27 +972,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-auto-annotation-using-sam-2" class="md-nav__link">
+  <a href="#step-2-auto-annotation-with-sam2" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Auto Annotation using SAM 2
+      Step 2: Auto Annotation with SAM2
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-generate-segmentation-masks" class="md-nav__link">
+  <a href="#step-3-generate-and-save-masks" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Generate Segmentation Masks
+      Step 3: Generate and Save Masks
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-visualize-the-segmentation-masks" class="md-nav__link">
+  <a href="#step-4-visualize-the-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Visualize the Segmentation Masks
+      Step 4: Visualize the Results
     </span>
   </a>
   
@@ -1013,9 +1013,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#social-resources" class="md-nav__link">
+  <a href="#explore-more" class="md-nav__link">
     <span class="md-ellipsis">
-      Social Resources
+      Explore More
     </span>
   </a>
   
@@ -1073,13 +1073,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-example" class="md-nav__link">
+  <a href="#how-to-generate-segmentation-masks" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Example
+      How to Generate Segmentation Masks
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Code Example">
+    <nav class="md-nav" aria-label="How to Generate Segmentation Masks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1092,27 +1092,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-auto-annotation-using-sam-2" class="md-nav__link">
+  <a href="#step-2-auto-annotation-with-sam2" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Auto Annotation using SAM 2
+      Step 2: Auto Annotation with SAM2
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-generate-segmentation-masks" class="md-nav__link">
+  <a href="#step-3-generate-and-save-masks" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Generate Segmentation Masks
+      Step 3: Generate and Save Masks
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-visualize-the-segmentation-masks" class="md-nav__link">
+  <a href="#step-4-visualize-the-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Visualize the Segmentation Masks
+      Step 4: Visualize the Results
     </span>
   </a>
   
@@ -1133,9 +1133,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#social-resources" class="md-nav__link">
+  <a href="#explore-more" class="md-nav__link">
     <span class="md-ellipsis">
-      Social Resources
+      Explore More
     </span>
   </a>
   
@@ -1165,25 +1165,25 @@
 
 
 <h1 id="how-to-generate-accurate-segmentation-masks-using-object-detection-and-sam2-model">How to Generate Accurate Segmentation Masks Using Object Detection and SAM2 Model</h1>
-<p>Segmentation masks are essential for accurate object tracking and analysis, enabling precise identification of objects at the pixel level. By leveraging the power of a fine-tuned <a href="https://docs.ultralytics.com/">Ultralytics</a> <a href="https://docs.ultralytics.com/models/yolo11/">YOLO11</a> model alongside the <a href="https://docs.ultralytics.com/models/sam-2/">Segment Anything 2</a> model, this process can achieve remarkable precision and adaptability.</p>
+<p>Segmentation masks are vital for precise object tracking and analysis, allowing pixel-level identification of objects. By leveraging a fine-tuned <a href="https://docs.ultralytics.com/models/yolo11/">Ultralytics YOLO11</a> model alongside the <a href="https://docs.ultralytics.com/models/sam-2/">Segment Anything 2 (SAM2)</a> model, you can achieve unparalleled accuracy and flexibility in your workflows.</p>
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/22e98b87-f446-464c-acef-54e32853d076" alt="Featured Image for Instance Segmentation">
-    <figcaption>Fig-1: Featured Image for Instance Segmentation</figcaption>
+    <img width="1920" src="https://github.com/user-attachments/assets/22e98b87-f446-464c-acef-54e32853d076" alt="Instance Segmentation with YOLO11 and SAM2">
+    <figcaption>Fig-1: Instance segmentation using Ultralytics YOLO11 and SAM2 model.</figcaption>
 </figure>
 
 <h2 id="hardware-model-and-dataset-information">Hardware, Model, and Dataset Information</h2>
 <ul>
 <li><strong>CPU</strong>: Intel® Core™ i5-10400 CPU @ 2.90GHz for efficient processing.  </li>
-<li><strong>GPU</strong>: NVIDIA RTX 3050, optimized for real-time processing tasks.  </li>
-<li><strong>RAM and Storage</strong>: Equipped with 64 GB of RAM and a 1TB hard disk for seamless performance.  </li>
-<li><strong>Model</strong>: A fine-tuned YOLO11 model was employed for object detection.  </li>
-<li><strong>Dataset</strong>: Proprietary dataset, meticulously annotated in-house by the team for optimal accuracy.  </li>
+<li><strong>GPU</strong>: NVIDIA RTX 3050 for real-time tasks.  </li>
+<li><strong>RAM and Storage</strong>: 64 GB RAM and 1TB hard disk for seamless performance.  </li>
+<li><strong>Model</strong>: Fine-tuned YOLO11 model for object detection.  </li>
+<li><strong>Dataset</strong>: Custom annotated dataset for maximum accuracy.</li>
 </ul>
-<h2 id="code-example">Code Example</h2>
+<h2 id="how-to-generate-segmentation-masks">How to Generate Segmentation Masks</h2>
 <h3 id="step-1-prepare-the-model">Step 1: Prepare the Model</h3>
-<p>Use a custom-trained YOLO11 model or utilize the <a href="https://docs.ultralytics.com/models/">Ultralytics Pretrained Models</a> for object detection. </p>
-<h3 id="step-2-auto-annotation-using-sam-2">Step 2: Auto Annotation using SAM 2</h3>
-<p>Now, it's time to integrate the SAM2 model for image segmentation. We will convert the detection bounding boxes to segmentation masks.</p>
+<p>Train or fine-tune a custom YOLO11 model, or use the <a href="https://docs.ultralytics.com/models/">Ultralytics Pretrained Models</a> for object detection tasks.</p>
+<h3 id="step-2-auto-annotation-with-sam2">Step 2: Auto Annotation with SAM2</h3>
+<p>Integrate the SAM2 model to convert bounding boxes into segmentation masks.</p>
 <div class="annotate highlight"><pre><span></span><code><span class="c1"># Install the necessary library</span>
 <span class="c1"># pip install ultralytics</span>
 
@@ -1194,10 +1194,10 @@
               <span class="n">det_model</span><span class="o">=</span><span class="s2">&quot;yolo11n.pt&quot;</span><span class="p">,</span>
               <span class="n">sam_model</span><span class="o">=</span><span class="s2">&quot;sam2_b.pt&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="step-3-generate-segmentation-masks">Step 3: Generate Segmentation Masks</h3>
-<p>After running the above script, the generated segmentation masks will be saved as <code>.txt</code> files in the <code>images_auto_annotate_labels</code> folder.</p>
-<h3 id="step-4-visualize-the-segmentation-masks">Step 4: Visualize the Segmentation Masks</h3>
-<p>Use the following script to overlay segmentation masks on the original images.</p>
+<h3 id="step-3-generate-and-save-masks">Step 3: Generate and Save Masks</h3>
+<p>Run the script to save segmentation masks as <code>.txt</code> files in the <code>images_auto_annotate_labels</code> folder.</p>
+<h3 id="step-4-visualize-the-results">Step 4: Visualize the Results</h3>
+<p>Use the following script to overlay segmentation masks on images.</p>
 <div class="annotate highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">cv2</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1205,14 +1205,13 @@
 
 <span class="c1"># Define folder paths</span>
 <span class="n">image_folder</span> <span class="o">=</span> <span class="s2">&quot;images_directory&quot;</span>   <span class="c1"># Path to your images directory</span>
-<span class="n">mask_folder</span> <span class="o">=</span> <span class="s2">&quot;images_auto_annotate_labels&quot;</span> <span class="c1"># annotation masks directory</span>
+<span class="n">mask_folder</span> <span class="o">=</span> <span class="s2">&quot;images_auto_annotate_labels&quot;</span> <span class="c1"># Annotation masks directory</span>
 <span class="n">output_folder</span> <span class="o">=</span> <span class="s2">&quot;output_directory&quot;</span>  <span class="c1"># Path to save output images</span>
 
 <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_folder</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="c1"># Process each image in the folder</span>
+<span class="c1"># Process each image</span>
 <span class="k">for</span> <span class="n">image_file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_folder</span><span class="p">):</span>
-
     <span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">image_folder</span><span class="p">,</span> <span class="n">image_file</span><span class="p">)</span>
     <span class="n">mask_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mask_folder</span><span class="p">,</span> 
                              <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image_file</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
@@ -1224,21 +1223,19 @@
         <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
-      <span class="n">data</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-      <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="kc">True</span><span class="p">)</span>
 
-      <span class="c1"># Extract normalized x, and y points and convert to absolute coordinates</span>
-      <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="n">height</span><span class="p">)</span> 
-      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="mi">2</span><span class="p">)],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+        <span class="c1"># Convert points to absolute coordinates</span>
+        <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="n">height</span><span class="p">)</span> 
+                           <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="mi">2</span><span class="p">)],</span> 
+                           <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 
-      <span class="n">overlay</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># mask image with the same dimensions as the im0</span>
-      <span class="n">cv2</span><span class="o">.</span><span class="n">fillPoly</span><span class="p">(</span><span class="n">overlay</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>  <span class="c1"># filled polygon on overlay</span>
-
-      <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.6</span>  <span class="c1"># Set the transparency level</span>
-      <span class="n">cv2</span><span class="o">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">overlay</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span> <span class="c1"># Blend overlay</span>
-
-      <span class="c1"># draw the polygon outline</span>
-      <span class="n">cv2</span><span class="o">.</span><span class="n">polylines</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">isClosed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">overlay</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">fillPoly</span><span class="p">(</span><span class="n">overlay</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+        <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.6</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">overlay</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">polylines</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">isClosed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 
     <span class="c1"># Save the output</span>
     <span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_folder</span><span class="p">,</span> <span class="n">image_file</span><span class="p">)</span>
@@ -1248,31 +1245,28 @@
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Processing complete.&quot;</span><span class="p">)</span>
 </code></pre></div>
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/e4afe41f-8da0-4095-9b3a-f2d2e736350b" alt="Image Description">
-    <figcaption>
-        Fig-2: Instance segmentation using Ultralytics YOLO11 and SAM2 model.
-    </figcaption>
+    <img width="1920" src="https://github.com/user-attachments/assets/e4afe41f-8da0-4095-9b3a-f2d2e736350b" alt="Visualization of Instance Segmentation">
+    <figcaption>Fig-2: Visualization of instance segmentation results.</figcaption>
 </figure>
 
 <h2 id="real-world-applications">Real-World Applications</h2>
 <ul>
-<li><strong>Medical Imaging</strong>: Segment organs, tissues, or anomalies in medical scans for diagnostic and research purposes.  </li>
-<li><strong>Autonomous Vehicles</strong>: Enhance vision systems by accurately identifying and segmenting objects like pedestrians, vehicles, and road signs in real-time.  </li>
-<li><strong>Retail Analytics</strong>: Analyze customer behavior by detecting and segmenting products or people in stores to optimize layouts and improve sales strategies.  </li>
-<li><strong>Wildlife Monitoring</strong>: Track and segment animals in natural habitats for research and conservation efforts.  </li>
-<li><strong>Robotics</strong>: Enable robotic systems to identify and manipulate objects in unstructured environments using precise segmentation.  </li>
-<li><strong>Satellite Imagery Analysis</strong>: Segment land types, urban areas, or vegetation in satellite images for environmental monitoring and urban planning.</li>
+<li><strong>Medical Imaging</strong>: Segment organs and anomalies in scans for diagnostics.  </li>
+<li><strong>Retail Analytics</strong>: Detect and segment customer activities or products.  </li>
+<li><strong>Robotics</strong>: Enable robots to identify objects in dynamic environments.  </li>
+<li><strong>Satellite Imagery</strong>: Analyze vegetation and urban areas for planning.</li>
 </ul>
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/2d0d68c0-af6c-4c3a-9b05-fe81e4987fa0" alt="Real-World Applications of Instance Segmentation">
-    <figcaption>Fig-3: Real-World Applications of Instance Segmentation</figcaption>
+    <img width="1920" src="https://github.com/user-attachments/assets/2d0d68c0-af6c-4c3a-9b05-fe81e4987fa0" alt="Applications of Instance Segmentation">
+    <figcaption>Fig-3: Applications of instance segmentation in various fields.</figcaption>
 </figure>
 
-<h2 id="social-resources">Social Resources</h2>
-<p>Explore more resources, tutorials, and use cases on the <a href="https://docs.ultralytics.com/guides/instance-segmentation-and-tracking/">Ultralytics documentation</a>.</p>
+<h2 id="explore-more">Explore More</h2>
 <ul>
-<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7264975021058482177/">Author: LinkedIn Post</a></li>
+<li><a href="https://docs.ultralytics.com/guides/instance-segmentation-and-tracking/">Ultralytics Documentation</a>  </li>
+<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7264975021058482177/">Engage on LinkedIn</a>  </li>
 </ul>
+<p>Start building your object segmentation workflow today!🚀</p>
 
 
 
