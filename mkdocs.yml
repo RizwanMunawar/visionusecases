@@ -6,18 +6,16 @@
 
 # Site metadata
 site_name: Computer Vision Use Cases
-site_description: Explore computer vision use cases and projects across various industries, including retail, transportation, medical imaging, manufacturing, agriculture, wildlife, and more, leveraging state-of-the-art models for object detection, image segmentation, object tracking, pose estimation, and beyond.
-site_url: https://rizwanmunawar.github.io/visionusecases/
-canonical_url: https://visionusecases.com/
+site_description: Discover computer vision use cases in retail, transportation, healthcare, manufacturing, agriculture, and more, featuring object detection, segmentation, tracking, and pose estimation with advanced models.
+site_url: https://visionusecases.com/
 site_author: Muhammad Rizwan Munawar
 repo_url: https://github.com/RizwanMunawar/visionusecases
 edit_uri: https://github.com/RizwanMunawar/visionusecases/tree/main/docs
 repo_name: visionusecases
 remote_name: https://github.com/RizwanMunawar/visionusecases/docs
-docs_dir: "docs/" # where to find the markdown files
-site_dir: "site/" # where to publish to
+docs_dir: "docs/"
+site_dir: "site/"
 
-# Theme customization
 theme:
   name: material
   language: en
@@ -26,9 +24,6 @@ theme:
   favicon: https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases.ico
   icon:
     repo: fontawesome/brands/github
-  # font:  # disabled for faster page load times
-  #  text: Helvetica
-  #  code: Roboto Mono
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -66,8 +61,8 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.indexes
-    - navigation.sections # navigation.expand or navigation.sections
-    - content.tabs.link # all code tabs change simultaneously
+    - navigation.sections
+    - content.tabs.link
 
 markdown_extensions:
   - pymdownx.extra
@@ -76,18 +71,15 @@ markdown_extensions:
       guess_lang: false
       use_pygments: true
 
-# Customization
 copyright: <a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024 Computer Vision Use Cases.</a> All rights reserved.
-extra: # version:
-  #   provider: mike  #  version drop-down menu
+extra:
   robots: robots.txt
   analytics:
     provider: google
     property: G-NQ1EQJ9YVY
-    
+
 extra_css:
   - stylesheets/style.css
-
 extra_javascript:
   - javascript/extra.js
   - javascript/giscus.js
@@ -122,5 +114,23 @@ nav:
   - Other Use Cases:
       - Segmentation masks with object detection model + SAM2: usecases/segmentation-masks-detect-sam2.md
 plugins:
-  - search
-  - git-authors
+  - search:
+      lang: en
+  - mkdocstrings:
+      enabled: true
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_options:
+              ignore_init_summary: true
+            merge_init_into_class: true
+            docstring_style: google
+            show_root_heading: true
+            show_source: true
+            separate_signature: true
+            line_length: 80
+            show_signature_annotations: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            show_inheritance_diagram: true
