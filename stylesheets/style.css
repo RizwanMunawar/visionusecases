@@ -53,26 +53,48 @@ figure {
     margin-top: 8px;
   }
 
-.author-info {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+
+/* For visual iframe and its div Styles for the parent div */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
 
-.author {
-    margin: 10px;
-    display: flex;
-    align-items: center;
+/* Style for iframe elements */
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Optional: Removes iframe border */
+}
+/* Style for the parent container */
+.embed-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
 }
 
-.author-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+/* Style for the iframe */
+.embed-wrapper iframe {
+    display: block; /* Ensure the iframe doesn't overlap the text */
+    width: 640px;
+    height: 360px;
+    border: none;
+    margin: 0 auto; /* Center the iframe */
 }
 
-.author span {
-    font-size: 14px;
-    font-weight: bold;
+/* Style for the caption text */
+.embed-wrapper span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
 }
+/* Styles for iframe elements, including those with a src */
