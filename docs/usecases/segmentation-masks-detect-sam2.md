@@ -132,4 +132,4 @@ print("Processing complete.")
 
 Explore more resources, tutorials, and use cases on the [Ultralytics documentation](https://docs.ultralytics.com/guides/instance-segmentation-and-tracking/).
 
-- LinkedIn Post
+- [Author: LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7264975021058482177/)
