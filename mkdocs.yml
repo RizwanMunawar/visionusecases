@@ -68,6 +68,13 @@ theme:
     - navigation.sections # navigation.expand or navigation.sections
     - content.tabs.link # all code tabs change simultaneously
 
+markdown_extensions:
+  - pymdownx.extra
+  - pymdownx.superfences
+  - codehilite:
+      guess_lang: false
+      use_pygments: true
+
 # Customization
 copyright: <a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024 Computer Vision Use Cases.</a> All rights reserved.
 extra: # version:
@@ -111,6 +118,8 @@ nav:
       - Bread Counting on Conveyor Belt: count/bread-counting.md
   - Computer Vision Datasets:
       - Overview: datasets/index.md
+  - Other Use Cases:
+      - Segmentation masks with object detection model + SAM2: usecases/segmentation-masks-detect-sam2.md
 plugins:
   - search
   - git-authors
