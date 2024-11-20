@@ -1,6 +1,6 @@
 # Computer Vision Use Cases Video Demos 🚀, AGPL-3.0 license
 
-# Configuration file for building the Computer Vision usecases documentation site using MkDocs.
+# Configuration file for building the Computer Vision use cases documentation site using MkDocs.
 # Provides settings to control site metadata, customize the appearance using the
 # Material theme, define the navigation structure, and enable various plugins.
 
@@ -8,6 +8,7 @@
 site_name: Computer Vision Use Cases
 site_description: Explore computer vision use cases and projects across various industries, including retail, transportation, medical imaging, manufacturing, agriculture, wildlife, and more, leveraging state-of-the-art models for object detection, image segmentation, object tracking, pose estimation, and beyond.
 site_url: https://rizwanmunawar.github.io/visionusecases/
+canonical_url: https://visionusecases.com/
 site_author: Muhammad Rizwan Munawar
 repo_url: https://github.com/RizwanMunawar/visionusecases
 edit_uri: https://github.com/RizwanMunawar/visionusecases/tree/main/docs
