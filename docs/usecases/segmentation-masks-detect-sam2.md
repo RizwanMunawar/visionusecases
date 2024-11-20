@@ -4,12 +4,12 @@ description: Learn how to generate segmentation masks with object detection and 
 keywords: object segmentation, object tracking, Ultralytics YOLO11, SAM2 model, automatic annotation, segmentation masks, AI object detection, real-time image processing, custom dataset, computer vision, advanced image analysis
 ---
 
-# How to Generate Accurate Segmentation Masks Using Object Detection and SAM2 Models
+# How to Generate Accurate Segmentation Masks Using Object Detection and SAM2 Model
 
 Segmentation masks are essential for accurate object tracking and analysis, enabling precise identification of objects at the pixel level. By leveraging the power of a fine-tuned [Ultralytics](https://docs.ultralytics.com/) [YOLO11](https://docs.ultralytics.com/models/yolo11/) model alongside the [Segment Anything 2](https://docs.ultralytics.com/models/sam-2/) model, this process can achieve remarkable precision and adaptability.
 
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/17e47c34-dad3-434f-abaa-102d7635f862" alt="Featured Image for Instance Segmentation">
+    <img width="1920" src="https://github.com/user-attachments/assets/22e98b87-f446-464c-acef-54e32853d076" alt="Featured Image for Instance Segmentation">
     <figcaption>Fig-1: Featured Image for Instance Segmentation</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ Use a custom-trained YOLO11 model or utilize the [Ultralytics Pretrained Models]
 
 ### Step 2: Auto Annotation using SAM 2
 
-Now, it's time to integrate the SAM2 model for image segmentation.
+Now, it's time to integrate the SAM2 model for image segmentation. We will convert the detection bounding boxes to segmentation masks.
 
 ```{ .py .annotate }
 # Install the necessary library
@@ -51,53 +51,47 @@ After running the above script, the generated segmentation masks will be saved a
 Use the following script to overlay segmentation masks on the original images.
 
 ```{ .py .annotate }
+import os
 import cv2
 import numpy as np
-import os
+from ultralytics.utils.plotting import colors
 
 # Define folder paths
 image_folder = "images_directory"   # Path to your images directory
-mask_folder = "images_auto_annotate_labels"  # Path to annotation masks directory created by SAM2
+mask_folder = "images_auto_annotate_labels" # annotation masks directory
 output_folder = "output_directory"  # Path to save output images
 
 os.makedirs(output_folder, exist_ok=True)
 
-# Define colors for classes (extend this as needed for more classes)
-class_colors = [
-    (0, 255, 0),    # Green for Class 0
-    (0, 0, 255),    # Red for Class 1
-    (255, 0, 0),    # Blue for Class 2
-    (255, 255, 0),  # Cyan for Class 3
-    (255, 0, 255),  # Magenta for Class 4
-    (0, 255, 255),  # Yellow for Class 5
-]
+# Process each image in the folder
+for image_file in os.listdir(image_folder):
 
-for image_file in os.listdir(image_folder): # Process each image in the folder
     image_path = os.path.join(image_folder, image_file)
-    mask_file = os.path.join(mask_folder, os.path.splitext(image_file)[0] + ".txt")
-    
-    if not os.path.exists(mask_file):
-        print(f"No mask file found for {image_file}. Skipping...")
-        continue
+    mask_file = os.path.join(mask_folder, 
+                             os.path.splitext(image_file)[0] + ".txt")
 
-    img = cv2.imread(image_path)  # Load the image
+    img = cv2.imread(image_path)   # Load the image
     height, width, _ = img.shape
 
-    with open(mask_file, "r") as f: # Read the mask file
+    with open(mask_file, "r") as f:  # Read the mask file
         lines = f.readlines()
 
     for line in lines:
-        data = line.strip().split()  # Parse class ID and points
-        class_id = int(data[0])  # Class ID
-        color = class_colors[class_id % len(class_colors)]  # Assign color for the class
-        
-        # Extract normalized x, y points and convert to absolute coordinates
-        points = [(float(data[i]) * width, float(data[i + 1]) * height) for i in range(1, len(data), 2)]
-        points = np.array(points, dtype=np.int32).reshape((-1, 1, 2))  # Required shape for OpenCV
-        
-        # Draw the polygon
-        cv2.polylines(img, [points], isClosed=True, color=color, thickness=2)  # Contour width = 2
-        cv2.fillPoly(img, [points], color=color)  # Fill with same color
+      data = line.strip().split()
+      color = colors(int(data[0]), True)
+
+      # Extract normalized x, and y points and convert to absolute coordinates
+      points = np.array([(float(data[i]) * width, float(data[i + 1]) * height) 
+      for i in range(1, len(data), 2)], dtype=np.int32).reshape((-1, 1, 2))
+
+      overlay = img.copy()  # mask image with the same dimensions as the im0
+      cv2.fillPoly(overlay, [points], color=color)  # filled polygon on overlay
+
+      alpha = 0.6  # Set the transparency level
+      cv2.addWeighted(overlay, alpha, img, 1 - alpha, 0, img) # Blend overlay
+
+      # draw the polygon outline
+      cv2.polylines(img, [points], isClosed=True, color=color, thickness=3)
 
     # Save the output
     output_path = os.path.join(output_folder, image_file)
@@ -108,7 +102,7 @@ print("Processing complete.")
 ```
 
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/607505f6-feda-4453-843a-28e4d9b3f8ff" alt="Image Description">
+    <img width="1920" src="https://github.com/user-attachments/assets/e4afe41f-8da0-4095-9b3a-f2d2e736350b" alt="Image Description">
     <figcaption>
         Fig-2: Instance segmentation using Ultralytics YOLO11 and SAM2 model.
     </figcaption>
@@ -124,7 +118,7 @@ print("Processing complete.")
 - **Satellite Imagery Analysis**: Segment land types, urban areas, or vegetation in satellite images for environmental monitoring and urban planning.
 
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/2db66fc5-454a-42f5-a176-d166ebe89518" alt="Real-World Applications of Instance Segmentation">
+    <img width="1920" src="https://github.com/user-attachments/assets/2d0d68c0-af6c-4c3a-9b05-fe81e4987fa0" alt="Real-World Applications of Instance Segmentation">
     <figcaption>Fig-3: Real-World Applications of Instance Segmentation</figcaption>
 </figure>
 
