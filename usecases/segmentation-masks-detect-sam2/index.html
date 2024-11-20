@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-generate-accurate-segmentation-masks-using-object-detection-and-sam2-models" class="md-skip">
+        <a href="#how-to-generate-accurate-segmentation-masks-using-object-detection-and-sam2-model" class="md-skip">
           Skip to content
         </a>
       
@@ -1164,10 +1164,10 @@
   
 
 
-<h1 id="how-to-generate-accurate-segmentation-masks-using-object-detection-and-sam2-models">How to Generate Accurate Segmentation Masks Using Object Detection and SAM2 Models</h1>
+<h1 id="how-to-generate-accurate-segmentation-masks-using-object-detection-and-sam2-model">How to Generate Accurate Segmentation Masks Using Object Detection and SAM2 Model</h1>
 <p>Segmentation masks are essential for accurate object tracking and analysis, enabling precise identification of objects at the pixel level. By leveraging the power of a fine-tuned <a href="https://docs.ultralytics.com/">Ultralytics</a> <a href="https://docs.ultralytics.com/models/yolo11/">YOLO11</a> model alongside the <a href="https://docs.ultralytics.com/models/sam-2/">Segment Anything 2</a> model, this process can achieve remarkable precision and adaptability.</p>
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/17e47c34-dad3-434f-abaa-102d7635f862" alt="Featured Image for Instance Segmentation">
+    <img width="1920" src="https://github.com/user-attachments/assets/22e98b87-f446-464c-acef-54e32853d076" alt="Featured Image for Instance Segmentation">
     <figcaption>Fig-1: Featured Image for Instance Segmentation</figcaption>
 </figure>
 
@@ -1183,7 +1183,7 @@
 <h3 id="step-1-prepare-the-model">Step 1: Prepare the Model</h3>
 <p>Use a custom-trained YOLO11 model or utilize the <a href="https://docs.ultralytics.com/models/">Ultralytics Pretrained Models</a> for object detection. </p>
 <h3 id="step-2-auto-annotation-using-sam-2">Step 2: Auto Annotation using SAM 2</h3>
-<p>Now, it's time to integrate the SAM2 model for image segmentation.</p>
+<p>Now, it's time to integrate the SAM2 model for image segmentation. We will convert the detection bounding boxes to segmentation masks.</p>
 <div class="annotate highlight"><pre><span></span><code><span class="c1"># Install the necessary library</span>
 <span class="c1"># pip install ultralytics</span>
 
@@ -1198,53 +1198,47 @@
 <p>After running the above script, the generated segmentation masks will be saved as <code>.txt</code> files in the <code>images_auto_annotate_labels</code> folder.</p>
 <h3 id="step-4-visualize-the-segmentation-masks">Step 4: Visualize the Segmentation Masks</h3>
 <p>Use the following script to overlay segmentation masks on the original images.</p>
-<div class="annotate highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">cv2</span>
+<div class="annotate highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">ultralytics.utils.plotting</span> <span class="kn">import</span> <span class="n">colors</span>
 
 <span class="c1"># Define folder paths</span>
 <span class="n">image_folder</span> <span class="o">=</span> <span class="s2">&quot;images_directory&quot;</span>   <span class="c1"># Path to your images directory</span>
-<span class="n">mask_folder</span> <span class="o">=</span> <span class="s2">&quot;images_auto_annotate_labels&quot;</span>  <span class="c1"># Path to annotation masks directory created by SAM2</span>
+<span class="n">mask_folder</span> <span class="o">=</span> <span class="s2">&quot;images_auto_annotate_labels&quot;</span> <span class="c1"># annotation masks directory</span>
 <span class="n">output_folder</span> <span class="o">=</span> <span class="s2">&quot;output_directory&quot;</span>  <span class="c1"># Path to save output images</span>
 
 <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_folder</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="c1"># Define colors for classes (extend this as needed for more classes)</span>
-<span class="n">class_colors</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>    <span class="c1"># Green for Class 0</span>
-    <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span>    <span class="c1"># Red for Class 1</span>
-    <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>    <span class="c1"># Blue for Class 2</span>
-    <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>  <span class="c1"># Cyan for Class 3</span>
-    <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span>  <span class="c1"># Magenta for Class 4</span>
-    <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span>  <span class="c1"># Yellow for Class 5</span>
-<span class="p">]</span>
+<span class="c1"># Process each image in the folder</span>
+<span class="k">for</span> <span class="n">image_file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_folder</span><span class="p">):</span>
 
-<span class="k">for</span> <span class="n">image_file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_folder</span><span class="p">):</span> <span class="c1"># Process each image in the folder</span>
     <span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">image_folder</span><span class="p">,</span> <span class="n">image_file</span><span class="p">)</span>
-    <span class="n">mask_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mask_folder</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image_file</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
+    <span class="n">mask_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mask_folder</span><span class="p">,</span> 
+                             <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image_file</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">mask_file</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No mask file found for </span><span class="si">{</span><span class="n">image_file</span><span class="si">}</span><span class="s2">. Skipping...&quot;</span><span class="p">)</span>
-        <span class="k">continue</span>
-
-    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>  <span class="c1"># Load the image</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>   <span class="c1"># Load the image</span>
     <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span>
 
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mask_file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="c1"># Read the mask file</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mask_file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>  <span class="c1"># Read the mask file</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>  <span class="c1"># Parse class ID and points</span>
-        <span class="n">class_id</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Class ID</span>
-        <span class="n">color</span> <span class="o">=</span> <span class="n">class_colors</span><span class="p">[</span><span class="n">class_id</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">class_colors</span><span class="p">)]</span>  <span class="c1"># Assign color for the class</span>
+      <span class="n">data</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+      <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="kc">True</span><span class="p">)</span>
 
-        <span class="c1"># Extract normalized x, y points and convert to absolute coordinates</span>
-        <span class="n">points</span> <span class="o">=</span> <span class="p">[(</span><span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="n">height</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="mi">2</span><span class="p">)]</span>
-        <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># Required shape for OpenCV</span>
+      <span class="c1"># Extract normalized x, and y points and convert to absolute coordinates</span>
+      <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="n">height</span><span class="p">)</span> 
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="mi">2</span><span class="p">)],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 
-        <span class="c1"># Draw the polygon</span>
-        <span class="n">cv2</span><span class="o">.</span><span class="n">polylines</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">isClosed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Contour width = 2</span>
-        <span class="n">cv2</span><span class="o">.</span><span class="n">fillPoly</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>  <span class="c1"># Fill with same color</span>
+      <span class="n">overlay</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># mask image with the same dimensions as the im0</span>
+      <span class="n">cv2</span><span class="o">.</span><span class="n">fillPoly</span><span class="p">(</span><span class="n">overlay</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>  <span class="c1"># filled polygon on overlay</span>
+
+      <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.6</span>  <span class="c1"># Set the transparency level</span>
+      <span class="n">cv2</span><span class="o">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">overlay</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span> <span class="c1"># Blend overlay</span>
+
+      <span class="c1"># draw the polygon outline</span>
+      <span class="n">cv2</span><span class="o">.</span><span class="n">polylines</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">isClosed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 
     <span class="c1"># Save the output</span>
     <span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_folder</span><span class="p">,</span> <span class="n">image_file</span><span class="p">)</span>
@@ -1254,7 +1248,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Processing complete.&quot;</span><span class="p">)</span>
 </code></pre></div>
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/607505f6-feda-4453-843a-28e4d9b3f8ff" alt="Image Description">
+    <img width="1920" src="https://github.com/user-attachments/assets/e4afe41f-8da0-4095-9b3a-f2d2e736350b" alt="Image Description">
     <figcaption>
         Fig-2: Instance segmentation using Ultralytics YOLO11 and SAM2 model.
     </figcaption>
@@ -1270,7 +1264,7 @@
 <li><strong>Satellite Imagery Analysis</strong>: Segment land types, urban areas, or vegetation in satellite images for environmental monitoring and urban planning.</li>
 </ul>
 <figure>
-    <img width="1920" src="https://github.com/user-attachments/assets/2db66fc5-454a-42f5-a176-d166ebe89518" alt="Real-World Applications of Instance Segmentation">
+    <img width="1920" src="https://github.com/user-attachments/assets/2d0d68c0-af6c-4c3a-9b05-fe81e4987fa0" alt="Real-World Applications of Instance Segmentation">
     <figcaption>Fig-3: Real-World Applications of Instance Segmentation</figcaption>
 </figure>
 
