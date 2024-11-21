@@ -1,208 +1,471 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Muhammad Rizwan Munawar" /><link rel="canonical" href="https://visionusecases.com/detect/" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Object Detection - Computer Vision Use Cases</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-        <link href="../assets/_mkdocstrings.css" rel="stylesheet" />
-        <link href="../stylesheets/style.css" rel="stylesheet" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Object Detection";
-        var mkdocs_page_input_path = "detect/index.md";
-        var mkdocs_page_url = "/detect/";
-      </script>
-    
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+        <title>Object Detection - Computer Vision Use Cases</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://visionusecases.com/detect/">
+        <meta name="author" content="Muhammad Rizwan Munawar">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
+            <link href="../assets/_mkdocstrings.css" rel="stylesheet">
+            <link href="../stylesheets/style.css" rel="stylesheet">
+
+        
+            <link  rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="..">
-          <img src="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png" class="logo" alt="Logo"/>
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    <main class="d-flex">
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Home</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Object Detection</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#object-detection-projects-bounding-boxes">Object Detection Projects | Bounding Boxes</a>
-    </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../track/">Object Tracking</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../segment/">Instance Segmentation</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../pose/">Pose Estimation</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../count/">Object Counting</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Object Detection</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Object Detection</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#object-detection-projects-bounding-boxes">Object Detection Projects | Bounding Boxes</a>
-    </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Object Detection</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#object-detection-projects-bounding-boxes">Object Detection Projects | Bounding Boxes</a>
-    </li>
-    </ul>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Instance Segmentation</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../segment/">Instance Segmentation</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../segment/">Instance Segmentation</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Object Tracking</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../track/">Object Tracking</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../track/">Object Tracking</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Pose Estimation</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../pose/">Pose Estimation</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../pose/">Pose Estimation</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Object Counting</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../count/">Object Counting</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../count/apple-counting/">Apple Counting on Conveyor Belt</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../count/items-counting/">Item Counting in Trolleys for Smart Shopping</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../count/bread-counting/">Bread Counting on Conveyor Belt</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Computer Vision Datasets</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../datasets/">Overview</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Other Use Cases</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../usecases/segmentation-masks-detect-sam2/">Segmentation masks with object detection model + SAM2</a>
-                  </li>
-              </ul>
-      </div>
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
     </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Computer Vision Use Cases</a>
+    <div class="p-4">
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Object Detection</li>
-      <li class="breadcrumb-item active">Object Detection</li>
-    <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/RizwanMunawar/visionusecases/tree/main/docs/detect/index.md">Edit on visionusecases</a>
+            <img class="logo" src="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png" height="150px">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Computer Vision Use Cases</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    Home
+                </a>
+                <div class="collapse" id="home-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href=".."
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Home
+        </a>
     </li>
-  </ul>
-  <hr/>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Object Detection
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../track/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Object Tracking
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../segment/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Instance Segmentation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../pose/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pose Estimation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../count/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Object Counting
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#object-detection-collapse" aria-expanded="false">
+                    Object Detection
+                </a>
+                <div class="collapse" id="object-detection-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Object Detection
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Object Detection
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#instance-segmentation-collapse" aria-expanded="false">
+                    Instance Segmentation
+                </a>
+                <div class="collapse" id="instance-segmentation-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../segment/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Instance Segmentation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../segment/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Instance Segmentation
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#object-tracking-collapse" aria-expanded="false">
+                    Object Tracking
+                </a>
+                <div class="collapse" id="object-tracking-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../track/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Object Tracking
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../track/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Object Tracking
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#pose-estimation-collapse" aria-expanded="false">
+                    Pose Estimation
+                </a>
+                <div class="collapse" id="pose-estimation-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../pose/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pose Estimation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../pose/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pose Estimation
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#object-counting-collapse" aria-expanded="false">
+                    Object Counting
+                </a>
+                <div class="collapse" id="object-counting-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../count/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Object Counting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../count/apple-counting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apple Counting on Conveyor Belt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../count/items-counting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Item Counting in Trolleys for Smart Shopping
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../count/bread-counting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Bread Counting on Conveyor Belt
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#computer-vision-datasets-collapse" aria-expanded="false">
+                    Computer Vision Datasets
+                </a>
+                <div class="collapse" id="computer-vision-datasets-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../datasets/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#other-use-cases-collapse" aria-expanded="false">
+                    Other Use Cases
+                </a>
+                <div class="collapse" id="other-use-cases-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../usecases/segmentation-masks-detect-sam2/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Segmentation masks with object detection model + SAM2
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="./"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../segment/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="object-detection-unleashing-computer-vision-potential">Object Detection | Unleashing Computer Vision Potential</h1>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                            
+                                <div class="md-source source-detail">
+    <div class="md-source-repo-icon">
+        <i class="fa fa-github-alt drac-text-white" aria-hidden="true"></i>
+    </div>
+
+    <div class="md-source-repo-url">
+        <a href="https://github.com/RizwanMunawar/visionusecases"
+            class="md-source drac-anchor drac-text drac-text-white drac-text-cyan-green--hover">
+            visionusecases
+        </a>
+
+        <ul class="md-source-repo-text">
+            <li>
+                <i class="fa fa-tag drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub tag (latest by date)"
+                    src="https://img.shields.io/github/v/tag/visionusecases?color=white&label=%20&style=flat-square">
+            </li>
+
+            <li>
+                <i class="fa fa-star drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub Repo stars"
+                    src="https://img.shields.io/github/stars/visionusecases?color=white&label=%20&style=flat-square">
+            </li>
+
+            <li>
+                <i class="fa fa-code-fork drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub forks"
+                    src="https://img.shields.io/github/forks/visionusecases?color=white&label=%20&style=flat-square">
+            </li>
+        </ul>
+    </div>
+
+</div>
+                            
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="object-detection-unleashing-computer-vision-potential">Object Detection | Unleashing Computer Vision Potential</h1>
 <p>Object detection is a cornerstone of computer vision, designed to identify and pinpoint objects within images or video streams. By combining classification and localization, it determines object types and precisely marks their positions with bounding boxes. This technology is widely employed in fields such as autonomous vehicles, security systems, and industrial operations.  </p>
 <p>Explore our impactful object detection projects, showcasing cutting-edge techniques and practical implementations:  </p>
 <h2 id="object-detection-projects-bounding-boxes">Object Detection Projects | Bounding Boxes</h2>
 <ul>
 <li><strong>Waste Detection: 🚀</strong> Learn how state-of-the-art object detection models like Ultralytics YOLO11 and YOLOv9 are transforming waste management processes, improving efficiency and sustainability. <a href="https://youtu.be/VhzkygLZido"><img alt="Watch Demo" src="https://img.shields.io/badge/Watch-Demo-blue?style=flat-square" title="Watch the Demo Video" /></a></li>
 <li><strong>Industrial Package Identification: 📦</strong> Discover how advanced detection models such as Ultralytics YOLO11, YOLOv10, or YOLOv8 enable precise package detection in industrial workflows, enhancing automation and accuracy. <a href="https://youtu.be/KGyP10JOwvw"><img alt="Watch Demo" src="https://img.shields.io/badge/Watch-Demo-blue?style=flat-square" title="Watch the Demo Video" /></a></li>
-</ul>
-              
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="./" class="btn btn-neutral float-left" title="Object Detection"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../segment/" class="btn btn-neutral float-right" title="Instance Segmentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
     </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-      <p><a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024 Computer Vision Use Cases.</a> All rights reserved.</p>
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-          
+            <!-- endblock -->
         </div>
-      </div>
 
-    </section>
+    </main>
 
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-        <span>
-          <a href="https://github.com/RizwanMunawar/visionusecases" class="fa fa-code-fork" style="color: #fcfcfc"> visionusecases</a>
-        </span>
-    
-    
-      <span><a href="./" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../segment/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
-</div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../javascript/extra.js"></script>
-      <script src="../javascript/giscus.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/mkdocs.js"></script>
+			<script src="../javascript/extra.js" defer></script>
+			<script src="../javascript/giscus.js" defer></script>
+			<script src="../search/main.js" defer></script>
 
 </body>
+
 </html>
