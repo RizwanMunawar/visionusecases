@@ -17,7 +17,7 @@ docs_dir: "docs/"
 site_dir: "site/"
 
 theme:
-  name: readthedocs
+  name: dracula
   language: en
   custom_dir: docs/overrides/
   logo: https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png
