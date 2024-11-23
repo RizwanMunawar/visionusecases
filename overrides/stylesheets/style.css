@@ -98,3 +98,16 @@ figure {
     color: #555;
 }
 /* Styles for iframe elements, including those with a src */
+
+/* Styles for announcement bar elements */
+.custom-link {
+  color: #495057; /* General color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.custom-link:hover {
+  color: #ffffff; /* White on hover */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+/* Styles for announcement bar elements */
