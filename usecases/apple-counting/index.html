@@ -6,13 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Discover computer vision use cases in retail, transportation, healthcare, manufacturing, agriculture, and more, featuring object detection, segmentation, tracking, and pose estimation with advanced models.">
+        <meta name="description" content="Discover how Ultralytics YOLO11 is transforming apple counting on conveyor belts, enabling precise yield estimation, harvesting optimization, and supply chain management in agriculture.">
       
       
         <meta name="author" content="Muhammad Rizwan Munawar">
       
       
+        <link rel="canonical" href="https://visionusecases.com/usecases/apple-counting/">
       
+      
+        <link rel="prev" href="../segmentation-masks-detect-sam2/">
+      
+      
+        <link rel="next" href="../items-counting/">
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases.ico">
@@ -20,14 +26,14 @@
     
     
       
-        <title>Computer Vision Use Cases</title>
+        <title>Apple Counting on Conveyor Belt - Computer Vision Use Cases</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="/assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="/stylesheets/style.css">
+      <link rel="stylesheet" href="../../stylesheets/style.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -85,6 +91,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#apple-counting-on-conveyor-belt-using-ultralytics-yolo11" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -97,7 +108,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Computer Vision Use Cases" class="md-header__button md-logo" aria-label="Computer Vision Use Cases" data-md-component="logo">
+    <a href="../.." title="Computer Vision Use Cases" class="md-header__button md-logo" aria-label="Computer Vision Use Cases" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png" alt="logo">
 
@@ -116,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Apple Counting on Conveyor Belt
             
           </span>
         </div>
@@ -232,11 +243,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/." class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -277,7 +290,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Computer Vision Use Cases" class="md-nav__button md-logo" aria-label="Computer Vision Use Cases" data-md-component="logo">
+    <a href="../.." title="Computer Vision Use Cases" class="md-nav__button md-logo" aria-label="Computer Vision Use Cases" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png" alt="logo">
 
@@ -303,6 +316,8 @@
       
   
   
+    
+  
   
   
     
@@ -325,35 +340,225 @@
     
     
       
+        
+        
+      
       
         
       
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
-  
-  
-    <a href="/." class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Computer Vision Use Cases
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision Use Cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items-segmentation-supermarket-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Items segmentation in supermarket using computer vision
+  </span>
   
 
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../segmentation-masks-detect-sam2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Segmentation masks with object detection model + SAM2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Apple Counting on Conveyor Belt
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Apple Counting on Conveyor Belt
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-model-and-dataset-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware, Model and Dataset Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications-for-fruit-counting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications for Fruit Counting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../items-counting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Item Counting in Trolleys for Smart Shopping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bread-counting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bread Counting on Conveyor Belt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -376,6 +581,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-model-and-dataset-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware, Model and Dataset Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications-for-fruit-counting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications for Fruit Counting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Social Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -387,8 +629,70 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+    <a href="https://github.com/RizwanMunawar/visionusecases/tree/main/docs/usecases/apple-counting.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="apple-counting-on-conveyor-belt-using-ultralytics-yolo11">Apple Counting on Conveyor Belt using Ultralytics YOLO11</h1>
+<p>Accurate counting of apples in agricultural setups plays a significant role in yield estimation, supply chain optimization, and resource planning. Leveraging computer vision and AI, we can automate this process with impressive accuracy and efficiency.</p>
+<div class="embed-wrapper">
+  <iframe src="https://drive.google.com/file/d/11RrbuQRRbfG57Id6cUdH3ZKFFA3S2aER/preview" 
+          allow="autoplay">
+  </iframe>
+  <span>Apple Counting on Conveyor Belt using Ultralytics YOLO11</span>
+</div>
+
+<h2 id="hardware-model-and-dataset-information">Hardware, Model and Dataset Information</h2>
+<ul>
+<li><strong>CPU</strong>: Intel® Core™ i5-10400 CPU @ 2.90GHz.</li>
+<li><strong>GPU</strong>: NVIDIA RTX 3050 for real-time processing tasks.</li>
+<li><strong>RAM</strong>: 64 GB RAM and 1TB HardDisk</li>
+<li><strong>Model</strong>: A fine-tuned Ultralytics YOLO11 model was utilized for object detection and counting.  </li>
+<li><strong>Dataset</strong>: The dataset used in this project is proprietary and was annotated in-house by our team.</li>
+</ul>
+<h2 id="real-world-applications-for-fruit-counting">Real-World Applications for Fruit Counting</h2>
+<ul>
+<li><strong>Yield Estimation:</strong> Accurately counting fruits like apples, oranges, or bananas helps farmers forecast harvest sizes, allowing for better planning and resource allocation to meet market demands.</li>
+<li><strong>Harvesting Optimization:</strong> Automated fruit counting aids in identifying the optimal harvest time, ensuring maximum yield and quality while reducing labor costs and wastage.</li>
+<li><strong>Sorting and Grading:</strong> Fruit counting systems integrated with sorting lines improve efficiency in grading fruits by size, weight, or ripeness, directly impacting pricing and market appeal.</li>
+<li><strong>Supply Chain Management:</strong> Real-time fruit counts enable precise tracking and packaging, streamlining logistics and reducing spoilage during transportation to markets or retailers.</li>
+</ul>
+<h2 id="social-resources">Social Resources</h2>
+<ul>
+<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7262376284427616256/">LinkedIn Post: Revolutionizing Apple Counting with Ultralytics YOLO11</a></li>
+<li><a href="https://x.com/muhammdrizwanmr/status/1857345522555551843">Twitter Thread: Counting Apples in Agriculture</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+<h2 id="__comments">Comments</h2>
+
+<!-- Giscus container -->
+<div id="giscus-container"></div>
+
+
+                
               </article>
             </div>
           
@@ -408,6 +712,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../segmentation-masks-detect-sam2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Segmentation masks with object detection model + SAM2">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Segmentation masks with object detection model + SAM2
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../items-counting/" class="md-footer__link md-footer__link--next" aria-label="Next: Item Counting in Trolleys for Smart Shopping">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Item Counting in Trolleys for Smart Shopping
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -438,14 +780,14 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.tooltips", "search.highlight", "search.share", "search.suggest", "toc.follow", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.footer", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.sections", "content.tabs.link"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.tooltips", "search.highlight", "search.share", "search.suggest", "toc.follow", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.footer", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.sections", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/javascript/extra.js"></script>
+        <script src="../../javascript/extra.js"></script>
       
-        <script src="/javascript/giscus.js"></script>
+        <script src="../../javascript/giscus.js"></script>
       
     
   </body>
