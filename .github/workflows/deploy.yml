@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'  # Compatible Python version for MkDocs
+          python-version: ['3.9', '3.10']  # Compatible Python version for MkDocs
 
       # Step 3: Install dependencies
       - name: Install MkDocs and Dependencies
