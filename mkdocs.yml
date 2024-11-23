@@ -86,36 +86,13 @@ extra_javascript:
   - javascript/giscus.js
 
 nav:
-  - Home:
-      - Home: index.md
-      - Object Detection: detect/index.md
-      - Object Tracking: track/index.md
-      - Instance Segmentation: segment/index.md
-      - Pose Estimation: pose/index.md
-      - Object Counting: count/index.md
-      - Computer Vision Datasets: datasets/index.md
-  - Object Detection:
-      - Overview: detect/index.md
-      - Use Cases: detect/index.md
-  - Instance Segmentation:
-      - Overview: segment/index.md
-      - Use Cases: segment/index.md
-  - Object Tracking:
-      - Overview: track/index.md
-      - Use Cases: track/index.md
-  - Pose Estimation:
-      - Overview: pose/index.md
-      - Use Cases: pose/index.md
-  - Object Counting:
-      - Overview: count/index.md
-      - Apple Counting on Conveyor Belt: count/apple-counting.md
-      - Item Counting in Trolleys for Smart Shopping: count/items-counting.md
-      - Bread Counting on Conveyor Belt: count/bread-counting.md
-  - Computer Vision Datasets:
-      - Overview: datasets/index.md
-  - Other Use Cases:
-      - Segmentation masks with object detection model + SAM2: usecases/segmentation-masks-detect-sam2.md
+  - Computer Vision Use Cases:
+      - Computer Vision Use Cases: index.md
       - Items segmentation in supermarket using computer vision: usecases/items-segmentation-supermarket-ai.md
+      - Segmentation masks with object detection model + SAM2: usecases/segmentation-masks-detect-sam2.md
+      - Apple Counting on Conveyor Belt: usecases/apple-counting.md
+      - Item Counting in Trolleys for Smart Shopping: usecases/items-counting.md
+      - Bread Counting on Conveyor Belt: usecases/bread-counting.md
 plugins:
   - search:
       lang: en
@@ -137,3 +114,15 @@ plugins:
             show_symbol_type_heading: true
             show_symbol_type_toc: true
             show_inheritance_diagram: true
+  - redirects:
+      redirect_maps:
+        hi/index.md: index.md
+        track/index.md: index.md
+        segment/index.md: index.md
+        count/index.md: index.md
+        detect/index.md: index.md
+        pose/index.md: index.md
+        datasets/index.md: index.md
+        count/apple-counting.md: usecases/apple-counting.md
+        count/bread-counting.md: usecases/bread-counting.md
+        count/items-counting.md: usecases/items-counting.md

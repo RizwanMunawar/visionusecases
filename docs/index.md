@@ -52,7 +52,7 @@ Object tracking monitors object movement across video frames. Starting with dete
     loading="lazy">
   <figcaption>
     <a 
-      href="../../track/"
+      href="../../usecases/"
       rel="noopener noreferrer">
       Object Tracking Use Cases using Ultralytics YOLO
     </a>
@@ -77,7 +77,7 @@ Pose estimation predicts spatial positions of key points on objects or humans, e
     loading="lazy">
   <figcaption>
     <a 
-      href="../../pose/"
+      href="../../usecases/"
       rel="noopener noreferrer">
       Pose Estimation Use Cases using Ultralytics YOLO
     </a>
@@ -102,7 +102,7 @@ Object counting identifies and tallies objects in images or videos. Leveraging d
     loading="lazy">
   <figcaption>
     <a 
-      href="../../count/"
+      href="../../usecases/"
       rel="noopener noreferrer">
       Object Counting Use Cases using Ultralytics YOLO
     </a>
@@ -113,9 +113,9 @@ Object counting identifies and tallies objects in images or videos. Leveraging d
 
 Explore our object counting projects, complete with practical applications:
 
-- **[Apples Counting on Conveyor Belt](count/apple-counting.md): 🍎** Learn how to count apples with precision using Ultralytics YOLO models for better inventory management. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
-- **[Items Counting in Shopping Trolley](count/items-counting.md): 🛒** See how we track and count items in shopping trolleys with cutting-edge detection models, streamlining retail operations. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
-- **[Bread Counting on Conveyor Belt](count/bread-counting.md): 🍞** Discover how to ensure accurate bread counts on conveyor belts with Ultralytics YOLO models, boosting production efficiency. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
+- **[Apples Counting on Conveyor Belt](usecases/apple-counting.md): 🍎** Learn how to count apples with precision using Ultralytics YOLO models for better inventory management. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
+- **[Items Counting in Shopping Trolley](usecases/items-counting.md): 🛒** See how we track and count items in shopping trolleys with cutting-edge detection models, streamlining retail operations. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
+- **[Bread Counting on Conveyor Belt](usecases/bread-counting.md): 🍞** Discover how to ensure accurate bread counts on conveyor belts with Ultralytics YOLO models, boosting production efficiency. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
 
 ## Image Segmentation | Precise Pixel-Level Analysis
 
