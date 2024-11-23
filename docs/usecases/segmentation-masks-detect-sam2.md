@@ -10,10 +10,10 @@ Segmentation masks are vital for precise object tracking and analysis, allowing 
 
 <figure>
     <img width="1920" src="https://github.com/user-attachments/assets/22e98b87-f446-464c-acef-54e32853d076" alt="Instance Segmentation with YOLO11 and SAM2">
-    <figcaption>Fig-1: Instance segmentation using Ultralytics YOLO11 and SAM2 model.</figcaption>
+    <figcaption>Fig-1: Instance segmentation using Ultralytics YOLO11 and <a href="https://docs.ultralytics.com/models/sam-2/">SAM2 model</a>.</figcaption>
 </figure>
 
-## Hardware, Model, and Dataset Information
+## Hardware and Software Setup for This Demo
 
 - **CPU**: Intel® Core™ i5-10400 CPU @ 2.90GHz for efficient processing.  
 - **GPU**: NVIDIA RTX 3050 for real-time tasks.  
@@ -103,6 +103,8 @@ print("Processing complete.")
     <img width="1920" src="https://github.com/user-attachments/assets/e4afe41f-8da0-4095-9b3a-f2d2e736350b" alt="Visualization of Instance Segmentation">
     <figcaption>Fig-2: Visualization of instance segmentation results.</figcaption>
 </figure>
+
+That's it! After completing [Step 4](#step-4-visualize-the-results), you'll be able to segment objects and view the total count for each segmented object in every frame.
 
 ## Real-World Applications
 

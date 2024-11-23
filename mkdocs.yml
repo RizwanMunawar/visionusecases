@@ -92,6 +92,7 @@ nav:
       - Instance Segmentation: segment/index.md
       - Pose Estimation: pose/index.md
       - Object Counting: count/index.md
+      - Computer Vision Datasets: datasets/index.md
   - Object Detection:
       - Overview: detect/index.md
       - Use Cases: detect/index.md
@@ -113,6 +114,7 @@ nav:
       - Overview: datasets/index.md
   - Other Use Cases:
       - Segmentation masks with object detection model + SAM2: usecases/segmentation-masks-detect-sam2.md
+      - Items segmentation in supermarket using computer vision: usecases/items-segmentation-supermarket-ai.md
 plugins:
   - search:
       lang: en
