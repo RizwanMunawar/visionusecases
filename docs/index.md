@@ -25,11 +25,7 @@ Object detection is a pivotal computer vision technique that identifies and loca
     alt="Object Detection Use Cases using Ultralytics YOLO" 
     loading="lazy">
   <figcaption>
-    <a 
-      href="../../detect/"
-      rel="noopener noreferrer">
       Object Detection Use Cases using Ultralytics YOLO
-    </a>
   </figcaption>
 </figure>
 
@@ -51,11 +47,7 @@ Object tracking monitors object movement across video frames. Starting with dete
     alt="Object Tracking Use Cases using Ultralytics YOLO" 
     loading="lazy">
   <figcaption>
-    <a 
-      href="../../usecases/"
-      rel="noopener noreferrer">
       Object Tracking Use Cases using Ultralytics YOLO
-    </a>
   </figcaption>
 </figure>
 
@@ -76,11 +68,7 @@ Pose estimation predicts spatial positions of key points on objects or humans, e
     alt="Pose Estimation Use Cases using Ultralytics YOLO" 
     loading="lazy">
   <figcaption>
-    <a 
-      href="../../usecases/"
-      rel="noopener noreferrer">
       Pose Estimation Use Cases using Ultralytics YOLO
-    </a>
   </figcaption>
 </figure>
 
@@ -101,11 +89,7 @@ Object counting identifies and tallies objects in images or videos. Leveraging d
     alt="Object Counting Use Cases using Ultralytics YOLO" 
     loading="lazy">
   <figcaption>
-    <a 
-      href="../../usecases/"
-      rel="noopener noreferrer">
       Object Counting Use Cases using Ultralytics YOLO
-    </a>
   </figcaption>
 </figure>
 
