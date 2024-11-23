@@ -13,4 +13,4 @@ Explore our cutting-edge image segmentation projects, including contributions fr
 ## Image Segmentation Projects | Instance and Semantic Segmentation
 
 - **Brain Scan Segmentation: 🧠** Learn how to segment brain scans with precision using models like Ultralytics YOLO11 or YOLOv8, revolutionizing medical imaging analysis.  
-  [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/9F0fry__HPE)
+  [![Check Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/9F0fry__HPE)

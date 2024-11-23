@@ -13,4 +13,4 @@ Discover our innovative pose estimation projects, featuring real-world applicati
 ## Projects | Keypoints Annotations
 
 - **Dog Pose Estimation: 🐾** Learn how to estimate dog poses using Ultralytics YOLO11, unlocking new possibilities in animal behavior analysis.  
-  [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/PmiWQgdTAuA)
+  [![Visual Highlights](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/PmiWQgdTAuA)

@@ -12,5 +12,5 @@ Explore our impactful object detection projects, showcasing cutting-edge techniq
 
 ## Object Detection Projects | Bounding Boxes
 
-- **Waste Detection: 🚀** Learn how state-of-the-art object detection models like Ultralytics YOLO11 and YOLOv9 are transforming waste management processes, improving efficiency and sustainability. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/VhzkygLZido)
-- **Industrial Package Identification: 📦** Discover how advanced detection models such as Ultralytics YOLO11, YOLOv10, or YOLOv8 enable precise package detection in industrial workflows, enhancing automation and accuracy. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/KGyP10JOwvw)
+- **Waste Detection: 🚀** Learn how state-of-the-art object detection models like Ultralytics YOLO11 and YOLOv9 are transforming waste management processes, improving efficiency and sustainability. [![See Visuals](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/VhzkygLZido)
+- **Industrial Package Identification: 📦** Discover how advanced detection models such as Ultralytics YOLO11, YOLOv10, or YOLOv8 enable precise package detection in industrial workflows, enhancing automation and accuracy. [![Discover visuals](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/KGyP10JOwvw)
