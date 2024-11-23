@@ -15,7 +15,6 @@ repo_name: visionusecases
 remote_name: https://github.com/RizwanMunawar/visionusecases/docs
 docs_dir: "docs/"
 site_dir: "site/"
-
 theme:
   name: material
   language: en
@@ -63,28 +62,40 @@ theme:
     - navigation.indexes
     - navigation.sections
     - content.tabs.link
-
+    - announce.dismiss
 markdown_extensions:
   - pymdownx.extra
   - pymdownx.superfences
   - codehilite:
       guess_lang: false
       use_pygments: true
-
-copyright: <a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024 Computer Vision Use Cases.</a> All rights reserved.
+copyright: <a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024 Computer Vision Use Cases.❤️</a> All rights reserved.
 extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RizwanMunawar/visionusecases
+      name: Computer Vision Use Cases
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/muhammadrizwanmunawar/
+      name: Muhammad Rizwan Munawar
   manifest: manifest.webmanifest
   robots: robots.txt
   analytics:
     provider: google
     property: G-NQ1EQJ9YVY
-
 extra_css:
   - stylesheets/style.css
 extra_javascript:
-  - javascript/extra.js
   - javascript/giscus.js
-
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    absolute_links: relative_to_docs
+    anchors: warn
+    unrecognized_links: warn
 nav:
   - Computer Vision Use Cases:
       - Computer Vision Use Cases: index.md
