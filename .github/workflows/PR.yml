@@ -1,0 +1,46 @@
+name: Computer Vision UseCases PR
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # Compatible Python version for MkDocs
+
+      # Step 3: Install dependencies
+      - name: Install MkDocs and Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-material mkdocs-git-authors-plugin mkdocstrings mkdocstrings[python] mkdocs-redirects
+
+      # Step 4: Build the Docs
+      - name: Build MkDocs Site
+        run: mkdocs build  # This generates the site into the 'site/' directory
+
+      # Step 5: Add CNAME File
+      - name: Create CNAME File
+        run: echo "visionusecases.com" > site/CNAME
+
+      # Step 6: Deploy Docs (only on push to main)
+      - name: Deploy Docs
+        if: github.event_name == 'push'  # Deploy only for pushes, not PRs
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.PAT_TOKEN }}  # Use your PAT from secrets
+          publish_dir: ./site  # The default directory for MkDocs build
+          publish_branch: computer-vision-use-cases  # GitHub Pages will host from this branch
