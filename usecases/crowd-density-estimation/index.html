@@ -6,19 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Learn how Ultralytics YOLO11 is transforming retail with item counting in shopping trolleys, automating checkouts, optimizing inventory management, and providing actionable customer insights.">
+        <meta name="description" content="Learn how to estimate crowd density using Ultralytics YOLO11 for efficient crowd monitoring and analysis.">
       
       
         <meta name="author" content="Muhammad Rizwan Munawar">
       
       
-        <link rel="canonical" href="https://visionusecases.com/usecases/items-counting/">
+        <link rel="canonical" href="https://visionusecases.com/usecases/crowd-density-estimation/">
       
       
-        <link rel="prev" href="../apple-counting/">
+        <link rel="prev" href="../bread-counting/">
       
-      
-        <link rel="next" href="../bread-counting/">
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases.ico">
@@ -26,7 +24,7 @@
     
     
       
-        <title>Item Counting in Trolleys for Smart Shopping - Computer Vision Use Cases</title>
+        <title>Crowd Density Estimation - Computer Vision Use Cases</title>
       
     
     
@@ -92,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#item-counting-in-trolleys-for-smart-shopping-using-ultralytics-yolo11" class="md-skip">
+        <a href="#accurate-crowd-density-estimation-using-ultralytics-yolo11" class="md-skip">
           Skip to content
         </a>
       
@@ -151,7 +149,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Item Counting in Trolleys for Smart Shopping
+              Crowd Density Estimation
             
           </span>
         </div>
@@ -478,30 +476,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Item Counting in Trolleys for Smart Shopping
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../items-counting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,53 +488,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-model-and-dataset-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware, Model, and Dataset Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#real-world-applications-for-item-counting-in-retail" class="md-nav__link">
-    <span class="md-ellipsis">
-      Real-World Applications for Item Counting in Retail
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#social-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Social Resources
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -587,10 +518,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../crowd-density-estimation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Crowd Density Estimation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -599,6 +550,140 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-specifications-used-for-this-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Specifications Used for This Implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-implement-crowd-density-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Implement Crowd Density Estimation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Implement Crowd Density Estimation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-setup-and-model-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Setup and Model Initialization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1: Setup and Model Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-to-initialize-and-track-with-yolo11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code to Initialize and Track with YOLO11
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-real-time-crowd-detection-and-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Real-Time Crowd Detection and Tracking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Real-Time Crowd Detection and Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-for-crowd-density-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code for Crowd Density Estimation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-visualizing-density-and-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Visualizing Density and Results
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Visualizing Density and Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaying-density-information-on-video-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      Displaying Density Information on Video Frames
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-of-crowd-density-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications of Crowd Density Estimation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-more" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explore More
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -638,27 +723,114 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hardware-model-and-dataset-information" class="md-nav__link">
+  <a href="#system-specifications-used-for-this-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Hardware, Model, and Dataset Information
+      System Specifications Used for This Implementation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#real-world-applications-for-item-counting-in-retail" class="md-nav__link">
+  <a href="#how-to-implement-crowd-density-estimation" class="md-nav__link">
     <span class="md-ellipsis">
-      Real-World Applications for Item Counting in Retail
+      How to Implement Crowd Density Estimation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Implement Crowd Density Estimation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-setup-and-model-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Setup and Model Initialization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1: Setup and Model Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-to-initialize-and-track-with-yolo11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code to Initialize and Track with YOLO11
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-real-time-crowd-detection-and-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Real-Time Crowd Detection and Tracking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Real-Time Crowd Detection and Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-for-crowd-density-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code for Crowd Density Estimation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-visualizing-density-and-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Visualizing Density and Results
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Visualizing Density and Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaying-density-information-on-video-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      Displaying Density Information on Video Frames
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-of-crowd-density-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications of Crowd Density Estimation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#social-resources" class="md-nav__link">
+  <a href="#explore-more" class="md-nav__link">
     <span class="md-ellipsis">
-      Social Resources
+      Explore More
     </span>
   </a>
   
@@ -679,7 +851,7 @@
                   
 
   
-    <a href="https://github.com/RizwanMunawar/visionusecases/tree/main/docs/usecases/items-counting.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/RizwanMunawar/visionusecases/tree/main/docs/usecases/crowd-density-estimation.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -687,35 +859,153 @@
   
 
 
-<h1 id="item-counting-in-trolleys-for-smart-shopping-using-ultralytics-yolo11">Item Counting in Trolleys for Smart Shopping Using Ultralytics YOLO11</h1>
-<p>Efficiently counting items in shopping trolleys can transform the retail industry by automating checkout processes, minimizing errors, and enhancing customer convenience. By leveraging computer vision and AI, this solution enables real-time item detection and counting, ensuring accuracy and efficiency.  </p>
-<div style="position: relative; width: 100%; max-width: 640px; margin: auto;">
-  <iframe src="https://drive.google.com/file/d/1xnZvZG3jkSOIrn64ONczBjTFBpf1m0Qc/preview" 
-          style="width: 100%; height: 360px; border: none;" 
-          allow="autoplay"></iframe>
-  <span style="display: block; text-align: center; margin-top: 10px; font-size: 16px; color: #555;">
-    Item Counting in Trolleys for Smart Shopping using Ultralytics YOLO11</span>
+<h1 id="accurate-crowd-density-estimation-using-ultralytics-yolo11">Accurate Crowd Density Estimation Using Ultralytics YOLO11 🎯</h1>
+<p>Discover how to utilize <a href="https://docs.ultralytics.com/models/yolo11/">Ultralytics YOLO11</a> for accurate crowd density estimation. This guide will take you through a step-by-step implementation using a YOLO11-based system to measure and monitor crowd density in various environments, improving safety and event management capabilities.</p>
+<div class="embed-container">
+  <iframe src="https://www.youtube.com/watch?v=38joFjkbRUs" 
+          allow="autoplay">
+  </iframe>
 </div>
 
-<h2 id="hardware-model-and-dataset-information">Hardware, Model, and Dataset Information</h2>
+<h2 id="system-specifications-used-for-this-implementation">System Specifications Used for This Implementation</h2>
 <ul>
-<li><strong>CPU</strong>: Intel® Core™ i5-10400 CPU @ 2.90GHz.  </li>
-<li><strong>GPU</strong>: NVIDIA RTX 3050 for seamless real-time processing.  </li>
-<li><strong>RAM</strong>: 64 GB RAM with a 1TB Hard Disk for large-scale data handling.  </li>
-<li><strong>Model</strong>: The solution utilizes a fine-tuned Ultralytics YOLO11 model, optimized for object detection and item counting.  </li>
-<li><strong>Dataset</strong>: A proprietary dataset was annotated in-house, tailored specifically for this application.  </li>
+<li><strong>CPU</strong>: Intel® Core™ i7-10700 CPU @ 2.90GHz for efficient processing.</li>
+<li><strong>GPU</strong>: NVIDIA RTX 3060 for faster object detection.</li>
+<li><strong>RAM &amp; Storage</strong>: 32 GB RAM and 512 GB SSD for optimal performance.</li>
+<li><strong>Model</strong>: Pre-trained YOLO11 model for person detection.</li>
+<li><strong>Dataset</strong>: Custom dataset for various crowd scenarios to fine-tune YOLO11 performance.</li>
 </ul>
-<h2 id="real-world-applications-for-item-counting-in-retail">Real-World Applications for Item Counting in Retail</h2>
+<h2 id="how-to-implement-crowd-density-estimation">How to Implement Crowd Density Estimation</h2>
+<h3 id="step-1-setup-and-model-initialization">Step 1: Setup and Model Initialization</h3>
+<p>To get started, the code utilizes a pre-trained YOLO11 model for person detection. This model is loaded into the <code>CrowdDensityEstimation</code> class, which is designed to track individuals in a crowd and estimate crowd density in real time.</p>
+<h4 id="code-to-initialize-and-track-with-yolo11">Code to Initialize and Track with YOLO11</h4>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">from</span> <span class="nn">estimator</span> <span class="kn">import</span> <span class="n">CrowdDensityEstimation</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">estimator</span> <span class="o">=</span> <span class="n">CrowdDensityEstimation</span><span class="p">()</span>  
+
+    <span class="c1"># Open video capture (0 for webcam, or video file path)</span>
+    <span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s2">&quot;path/to/video/file.mp4&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Get video properties for output</span>
+    <span class="n">frame_width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FRAME_WIDTH</span><span class="p">))</span>
+    <span class="n">frame_height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FRAME_HEIGHT</span><span class="p">))</span>
+    <span class="n">fps</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FPS</span><span class="p">))</span>
+    <span class="n">fourcc</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoWriter_fourcc</span><span class="p">(</span><span class="o">*</span><span class="s1">&#39;mp4v&#39;</span><span class="p">)</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoWriter</span><span class="p">(</span><span class="s1">&#39;path/to/video/output-file.mp4&#39;</span><span class="p">,</span> <span class="n">fourcc</span><span class="p">,</span> <span class="n">fps</span><span class="p">,</span> <span class="p">(</span><span class="n">frame_width</span><span class="p">,</span> <span class="n">frame_height</span><span class="p">))</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">ret</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">cap</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">ret</span><span class="p">:</span>
+            <span class="k">break</span>
+
+        <span class="c1"># Process frame</span>
+        <span class="n">processed_frame</span><span class="p">,</span> <span class="n">density_info</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">process_frame</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+
+        <span class="c1"># Display output</span>
+        <span class="n">estimator</span><span class="o">.</span><span class="n">display_output</span><span class="p">(</span><span class="n">processed_frame</span><span class="p">,</span> <span class="n">density_info</span><span class="p">)</span>
+
+        <span class="c1"># Write output frame</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">processed_frame</span><span class="p">)</span>
+
+        <span class="c1"># Break loop on &#39;q&#39; press</span>
+        <span class="k">if</span> <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;q&#39;</span><span class="p">):</span>
+            <span class="k">break</span>
+
+    <span class="c1"># Cleanup</span>
+    <span class="n">cap</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<p>This setup captures frames from a video source, processes them using YOLO11 to detect people, and calculates crowd density.</p>
+<h3 id="step-2-real-time-crowd-detection-and-tracking">Step 2: Real-Time Crowd Detection and Tracking</h3>
+<p>The core of the implementation relies on tracking individuals in each frame using the YOLO11 model and estimating the crowd density. This is achieved through a series of steps, which include detecting people, calculating density, and classifying the crowd level.</p>
+<h4 id="code-for-crowd-density-estimation">Code for Crowd Density Estimation</h4>
+<p>The main class <code>CrowdDensityEstimation</code> includes the following functionality:</p>
 <ul>
-<li><strong>Smart Checkouts:</strong> Automating item counting in shopping trolleys ensures fast and error-free billing, enhancing the overall customer experience.  </li>
-<li><strong>Inventory Management:</strong> Provides real-time updates on stock levels, enabling retailers to optimize inventory restocking and reduce shortages.  </li>
-<li><strong>Data Insights:</strong> Enables retailers to gather valuable data on customer purchasing trends, aiding in personalized marketing and inventory forecasting.  </li>
+<li><strong>Person Detection</strong>: Using YOLO11 to detect individuals in each frame.</li>
+<li><strong>Density Calculation</strong>: Based on the number of detected persons relative to the frame area.</li>
+<li><strong>Tracking</strong>: Visualization of tracking history for each detected person.</li>
 </ul>
-<h2 id="social-resources">Social Resources</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Install ultralytics package</span>
+<span class="c1"># pip install ultralytics</span>
+
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">ultralytics</span> <span class="kn">import</span> <span class="n">YOLO</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+
+<span class="k">class</span> <span class="nc">CrowdDensityEstimation</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_path</span><span class="o">=</span><span class="s1">&#39;yolo11n.pt&#39;</span><span class="p">,</span> <span class="n">conf_threshold</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">YOLO</span><span class="p">(</span><span class="n">model_path</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">conf_threshold</span> <span class="o">=</span> <span class="n">conf_threshold</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">track_history</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="p">[])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">density_levels</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;Low&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span> <span class="c1"># 0-0.2 persons/m²</span>
+            <span class="s1">&#39;Medium&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="c1"># 0.2-0.5 persons/m²</span>
+            <span class="s1">&#39;High&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">),</span> <span class="c1"># 0.5-0.8 persons/m²</span>
+            <span class="s1">&#39;Very High&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">))</span> <span class="c1"># &gt;0.8 persons/m²</span>
+        <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">extract_tracks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">):</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">track</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="n">persist</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">conf</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conf_threshold</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">results</span>
+
+    <span class="k">def</span> <span class="nf">calculate_density</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">,</span> <span class="n">frame_area</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">results</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="mi">0</span>
+
+        <span class="n">person_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">boxes</span><span class="p">)</span>
+        <span class="n">density_value</span> <span class="o">=</span> <span class="n">person_count</span> <span class="o">/</span> <span class="n">frame_area</span> <span class="o">*</span> <span class="mi">10000</span>  
+
+        <span class="n">density_level</span> <span class="o">=</span> <span class="s1">&#39;Low&#39;</span>
+        <span class="k">for</span> <span class="n">level</span><span class="p">,</span> <span class="p">(</span><span class="n">min_val</span><span class="p">,</span> <span class="n">max_val</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">density_levels</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">min_val</span> <span class="o">&lt;=</span> <span class="n">density_value</span> <span class="o">&lt;</span> <span class="n">max_val</span><span class="p">:</span>
+                <span class="n">density_level</span> <span class="o">=</span> <span class="n">level</span>
+                <span class="k">break</span>
+
+        <span class="k">return</span> <span class="n">density_value</span><span class="p">,</span> <span class="n">density_level</span><span class="p">,</span> <span class="n">person_count</span>
+</code></pre></div>
+<h3 id="step-3-visualizing-density-and-results">Step 3: Visualizing Density and Results</h3>
+<p>Once density is calculated, the processed frame is annotated with information like density level, person count, and a tracking visualization. This enhances situational awareness by providing clear visual cues.</p>
+<h4 id="displaying-density-information-on-video-frames">Displaying Density Information on Video Frames</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">,</span> <span class="n">density_info</span><span class="p">):</span>
+    <span class="n">density_value</span><span class="p">,</span> <span class="n">density_level</span><span class="p">,</span> <span class="n">person_count</span> <span class="o">=</span> <span class="n">density_info</span>
+
+    <span class="n">cv2</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">cv2</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;Density Level: </span><span class="si">{</span><span class="n">density_level</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span>
+                <span class="n">cv2</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;Person Count: </span><span class="si">{</span><span class="n">person_count</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">70</span><span class="p">),</span>
+                <span class="n">cv2</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;Density Value: </span><span class="si">{</span><span class="n">density_value</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span>
+                <span class="n">cv2</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1"># Display the frame</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s1">&#39;Crowd Density Estimation&#39;</span><span class="p">,</span> <span class="n">im0</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="applications-of-crowd-density-estimation">Applications of Crowd Density Estimation</h2>
 <ul>
-<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7262010373703131136">LinkedIn Post: Transforming Retail with Item Counting in Trolley using YOLO11</a>  </li>
-<li><a href="https://x.com/muhammdrizwanmr/status/1856979354867437708">Twitter Thread: Revolutionizing Shopping Trolleys with YOLO11</a></li>
+<li><strong>Public Safety:</strong> </li>
+<li><strong>Early Warning System:</strong> Detecting unusual crowd formations.</li>
+<li><strong>Emergency Response:</strong> Identifying areas of high density for quick intervention.</li>
+<li><strong>Event Management:</strong> </li>
+<li><strong>Capacity Monitoring:</strong> Real-time tracking of crowd sizes in venues.</li>
+<li><strong>Safety Compliance:</strong> Ensuring attendance stays within safe limits.</li>
+<li><strong>Flow Analysis:</strong> Understanding movement patterns for better event planning.</li>
+<li><strong>Urban Planning:</strong> </li>
+<li><strong>Space Utilization:</strong> Analyzing how people use public spaces.</li>
+<li><strong>Infrastructure Planning:</strong> Designing facilities based on crowd patterns.</li>
 </ul>
+<h2 id="explore-more">Explore More</h2>
+<ul>
+<li><a href="https://docs.ultralytics.com/models/yolo11/">Learn More About YOLO11 on the Official Ultralytics Documentation</a></li>
+<li><a href="https://www.linkedin.com/posts/ivan-apedo_ai-computervision-yolo11-activity-7266460747285602304-D_xR?utm_source=share&amp;utm_medium=member_desktop">Join the Discussion on LinkedIn</a>  </li>
+</ul>
+<p>Unlock the potential of advanced crowd monitoring using YOLO11 and streamline operations for various sectors! 🚀</p>
 
 
 
@@ -764,7 +1054,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../apple-counting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Apple Counting on Conveyor Belt">
+          <a href="../bread-counting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bread Counting on Conveyor Belt">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -774,27 +1064,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Apple Counting on Conveyor Belt
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../bread-counting/" class="md-footer__link md-footer__link--next" aria-label="Next: Bread Counting on Conveyor Belt">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
                 Bread Counting on Conveyor Belt
               </div>
             </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     
