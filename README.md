@@ -12,10 +12,11 @@ Discover real-world applications of computer vision across industries such as re
 
 - Industrial Package Identification: 📦 [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/KGyP10JOwvw)
 
+- Crowd Density Estimation: 🚶‍♀️🚶‍♂️ [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://www.youtube.com/watch?v=38joFjkbRUs)
+
 ### Object Tracking Use Cases:
 
 - Vehicle Tracking: 🚗 [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/gUMvcrFeVUg)
-
 
 ### Pose Estimation Use Cases:
 
