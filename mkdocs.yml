@@ -104,6 +104,7 @@ nav:
       - Apple Counting on Conveyor Belt: usecases/apple-counting.md
       - Item Counting in Trolleys for Smart Shopping: usecases/items-counting.md
       - Bread Counting on Conveyor Belt: usecases/bread-counting.md
+      - Crowd Density Estimation: usecases/crowd-density-estimation.md
 plugins:
   - search:
       lang: en
