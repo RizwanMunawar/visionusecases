@@ -148,13 +148,18 @@ def display_output(self, im0, density_info):
 ## Applications of Crowd Density Estimation
 
 1- **Public Safety** 
+
   - Early Warning System: Detecting unusual crowd formations.
   - Emergency Response: Identifying areas of high density for quick intervention.
+
 2- **Event Management** 
+  
   - Capacity Monitoring: Real-time tracking of crowd sizes in venues.
   - Safety Compliance: Ensuring attendance stays within safe limits.
   - Flow Analysis: Understanding movement patterns for better event planning.
+
 3- **Urban Planning** 
+  
   - Space Utilization: Analyzing how people use public spaces.
   - Infrastructure Planning: Designing facilities based on crowd patterns.
 
