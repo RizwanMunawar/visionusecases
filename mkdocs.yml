@@ -106,6 +106,7 @@ nav:
       - Bread Counting on Conveyor Belt: usecases/bread-counting.md
       - Crowd Density Estimation: usecases/crowd-density-estimation.md
 plugins:
+  - git-authors
   - search:
       lang: en
   - mkdocstrings:

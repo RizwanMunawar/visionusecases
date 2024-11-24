@@ -40,7 +40,6 @@ def main():
     # Open video capture (0 for webcam, or video file path)
     cap = cv2.VideoCapture("path/to/video/file.mp4")
     
-    
     # Get video properties for output
     frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
@@ -53,15 +52,12 @@ def main():
         ret, frame = cap.read()
         if not ret:
             break
-            
-        processed_frame, density_info = estimator.process_frame(frame)  # Process frame
-        estimator.display_output(processed_frame, density_info)  # Display output
-        
-        out.write(processed_frame)
+        processed_frame, density_info = estimator.process_frame(frame)
+        estimator.display_output(processed_frame, density_info)  # Display
+        out.write(processed_frame)  # Write output frame
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     
-    # Cleanup
     cap.release()
     cv2.destroyAllWindows()
 
@@ -151,20 +147,20 @@ def display_output(self, im0, density_info):
 
 ## Applications of Crowd Density Estimation
 
-- **Public Safety** 
+1- **Public Safety** 
   - Early Warning System: Detecting unusual crowd formations.
   - Emergency Response: Identifying areas of high density for quick intervention.
-- **Event Management** 
+2- **Event Management** 
   - Capacity Monitoring: Real-time tracking of crowd sizes in venues.
   - Safety Compliance: Ensuring attendance stays within safe limits.
   - Flow Analysis: Understanding movement patterns for better event planning.
-- **Urban Planning** 
+3- **Urban Planning** 
   - Space Utilization: Analyzing how people use public spaces.
   - Infrastructure Planning: Designing facilities based on crowd patterns.
 
 ## Explore More
 
 - [Contribute to Ultralytics Solutions](https://docs.ultralytics.com/solutions/)
-- [Author's LinkedIn](https://www.linkedin.com/posts/ivan-apedo_ai-computervision-yolo11-activity-7266460747285602304-D_xR?utm_source=share&utm_medium=member_desktop)  
+- [Author's LinkedIn Post Discussion](https://www.linkedin.com/posts/ivan-apedo_ai-computervision-yolo11-activity-7266460747285602304-D_xR?utm_source=share&utm_medium=member_desktop)  
   
 Unlock the potential of advanced crowd monitoring using YOLO11 and streamline operations for various sectors! 🚀
