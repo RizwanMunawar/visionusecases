@@ -9,7 +9,7 @@ keywords: crowd density estimation, YOLO11, Ultralytics YOLO11, AI crowd analysi
 Discover how to utilize [Ultralytics YOLO11](https://docs.ultralytics.com/models/yolo11/) for accurate crowd density estimation. This guide will take you through a step-by-step implementation using a YOLO11-based system to measure and monitor crowd density in various environments, improving safety and event management capabilities.
 
 <div class="embed-container">
-  <iframe src="https://www.youtube.com/watch?v=38joFjkbRUs" 
+  <iframe src="https://drive.google.com/file/d/1kF1AZbLWOsMzQOoU_mFeonxB-4ysgawz/preview" 
           allow="autoplay">
   </iframe>
 </div>
@@ -39,29 +39,25 @@ def main():
     
     # Open video capture (0 for webcam, or video file path)
     cap = cv2.VideoCapture("path/to/video/file.mp4")
-
+    
+    
     # Get video properties for output
     frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     fps = int(cap.get(cv2.CAP_PROP_FPS))
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    out = cv2.VideoWriter('path/to/video/output-file.mp4', fourcc, fps, (frame_width, frame_height))
+    out = cv2.VideoWriter('crowd-density-estimation.mp4', 
+                          fourcc, fps, (frame_width, frame_height))
     
     while True:
         ret, frame = cap.read()
         if not ret:
             break
             
-        # Process frame
-        processed_frame, density_info = estimator.process_frame(frame)
+        processed_frame, density_info = estimator.process_frame(frame)  # Process frame
+        estimator.display_output(processed_frame, density_info)  # Display output
         
-        # Display output
-        estimator.display_output(processed_frame, density_info)
-
-        # Write output frame
         out.write(processed_frame)
-        
-        # Break loop on 'q' press
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     
@@ -109,7 +105,9 @@ class CrowdDensityEstimation:
         }
 
     def extract_tracks(self, im0):
-        results = self.model.track(im0, persist=True, conf=self.conf_threshold, classes=[0])
+        results = self.model.track(im0, persist=True, 
+                                   conf=self.conf_threshold, 
+                                   classes=[0])
         return results
 
     def calculate_density(self, results, frame_area):
@@ -153,20 +151,20 @@ def display_output(self, im0, density_info):
 
 ## Applications of Crowd Density Estimation
 
-- **Public Safety:** 
-  - **Early Warning System:** Detecting unusual crowd formations.
-  - **Emergency Response:** Identifying areas of high density for quick intervention.
-- **Event Management:** 
-  - **Capacity Monitoring:** Real-time tracking of crowd sizes in venues.
-  - **Safety Compliance:** Ensuring attendance stays within safe limits.
-  - **Flow Analysis:** Understanding movement patterns for better event planning.
-- **Urban Planning:** 
-  - **Space Utilization:** Analyzing how people use public spaces.
-  - **Infrastructure Planning:** Designing facilities based on crowd patterns.
+- **Public Safety** 
+  - Early Warning System: Detecting unusual crowd formations.
+  - Emergency Response: Identifying areas of high density for quick intervention.
+- **Event Management** 
+  - Capacity Monitoring: Real-time tracking of crowd sizes in venues.
+  - Safety Compliance: Ensuring attendance stays within safe limits.
+  - Flow Analysis: Understanding movement patterns for better event planning.
+- **Urban Planning** 
+  - Space Utilization: Analyzing how people use public spaces.
+  - Infrastructure Planning: Designing facilities based on crowd patterns.
 
 ## Explore More
 
-- [Learn More About YOLO11 on the Official Ultralytics Documentation](https://docs.ultralytics.com/models/yolo11/)
-- [Join the Discussion on LinkedIn](https://www.linkedin.com/posts/ivan-apedo_ai-computervision-yolo11-activity-7266460747285602304-D_xR?utm_source=share&utm_medium=member_desktop)  
+- [Contribute to Ultralytics Solutions](https://docs.ultralytics.com/solutions/)
+- [Author's LinkedIn](https://www.linkedin.com/posts/ivan-apedo_ai-computervision-yolo11-activity-7266460747285602304-D_xR?utm_source=share&utm_medium=member_desktop)  
   
 Unlock the potential of advanced crowd monitoring using YOLO11 and streamline operations for various sectors! 🚀
