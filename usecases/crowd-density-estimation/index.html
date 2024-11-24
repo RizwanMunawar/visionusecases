@@ -862,7 +862,7 @@
 <h1 id="accurate-crowd-density-estimation-using-ultralytics-yolo11">Accurate Crowd Density Estimation Using Ultralytics YOLO11 🎯</h1>
 <p>Discover how to utilize <a href="https://docs.ultralytics.com/models/yolo11/">Ultralytics YOLO11</a> for accurate crowd density estimation. This guide will take you through a step-by-step implementation using a YOLO11-based system to measure and monitor crowd density in various environments, improving safety and event management capabilities.</p>
 <div class="embed-container">
-  <iframe src="https://www.youtube.com/watch?v=38joFjkbRUs" 
+  <iframe src="https://drive.google.com/file/d/1kF1AZbLWOsMzQOoU_mFeonxB-4ysgawz/preview" 
           allow="autoplay">
   </iframe>
 </div>
@@ -888,28 +888,24 @@
     <span class="c1"># Open video capture (0 for webcam, or video file path)</span>
     <span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s2">&quot;path/to/video/file.mp4&quot;</span><span class="p">)</span>
 
+
     <span class="c1"># Get video properties for output</span>
     <span class="n">frame_width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FRAME_WIDTH</span><span class="p">))</span>
     <span class="n">frame_height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FRAME_HEIGHT</span><span class="p">))</span>
     <span class="n">fps</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FPS</span><span class="p">))</span>
     <span class="n">fourcc</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoWriter_fourcc</span><span class="p">(</span><span class="o">*</span><span class="s1">&#39;mp4v&#39;</span><span class="p">)</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoWriter</span><span class="p">(</span><span class="s1">&#39;path/to/video/output-file.mp4&#39;</span><span class="p">,</span> <span class="n">fourcc</span><span class="p">,</span> <span class="n">fps</span><span class="p">,</span> <span class="p">(</span><span class="n">frame_width</span><span class="p">,</span> <span class="n">frame_height</span><span class="p">))</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoWriter</span><span class="p">(</span><span class="s1">&#39;crowd-density-estimation.mp4&#39;</span><span class="p">,</span> 
+                          <span class="n">fourcc</span><span class="p">,</span> <span class="n">fps</span><span class="p">,</span> <span class="p">(</span><span class="n">frame_width</span><span class="p">,</span> <span class="n">frame_height</span><span class="p">))</span>
 
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="n">ret</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">cap</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">ret</span><span class="p">:</span>
             <span class="k">break</span>
 
-        <span class="c1"># Process frame</span>
-        <span class="n">processed_frame</span><span class="p">,</span> <span class="n">density_info</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">process_frame</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+        <span class="n">processed_frame</span><span class="p">,</span> <span class="n">density_info</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">process_frame</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>  <span class="c1"># Process frame</span>
+        <span class="n">estimator</span><span class="o">.</span><span class="n">display_output</span><span class="p">(</span><span class="n">processed_frame</span><span class="p">,</span> <span class="n">density_info</span><span class="p">)</span>  <span class="c1"># Display output</span>
 
-        <span class="c1"># Display output</span>
-        <span class="n">estimator</span><span class="o">.</span><span class="n">display_output</span><span class="p">(</span><span class="n">processed_frame</span><span class="p">,</span> <span class="n">density_info</span><span class="p">)</span>
-
-        <span class="c1"># Write output frame</span>
         <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">processed_frame</span><span class="p">)</span>
-
-        <span class="c1"># Break loop on &#39;q&#39; press</span>
         <span class="k">if</span> <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;q&#39;</span><span class="p">):</span>
             <span class="k">break</span>
 
@@ -951,7 +947,9 @@
         <span class="p">}</span>
 
     <span class="k">def</span> <span class="nf">extract_tracks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">):</span>
-        <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">track</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="n">persist</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">conf</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conf_threshold</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">track</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="n">persist</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+                                   <span class="n">conf</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conf_threshold</span><span class="p">,</span> 
+                                   <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
         <span class="k">return</span> <span class="n">results</span>
 
     <span class="k">def</span> <span class="nf">calculate_density</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">,</span> <span class="n">frame_area</span><span class="p">):</span>
@@ -989,21 +987,21 @@
 </code></pre></div>
 <h2 id="applications-of-crowd-density-estimation">Applications of Crowd Density Estimation</h2>
 <ul>
-<li><strong>Public Safety:</strong> </li>
-<li><strong>Early Warning System:</strong> Detecting unusual crowd formations.</li>
-<li><strong>Emergency Response:</strong> Identifying areas of high density for quick intervention.</li>
-<li><strong>Event Management:</strong> </li>
-<li><strong>Capacity Monitoring:</strong> Real-time tracking of crowd sizes in venues.</li>
-<li><strong>Safety Compliance:</strong> Ensuring attendance stays within safe limits.</li>
-<li><strong>Flow Analysis:</strong> Understanding movement patterns for better event planning.</li>
-<li><strong>Urban Planning:</strong> </li>
-<li><strong>Space Utilization:</strong> Analyzing how people use public spaces.</li>
-<li><strong>Infrastructure Planning:</strong> Designing facilities based on crowd patterns.</li>
+<li><strong>Public Safety</strong> </li>
+<li>Early Warning System: Detecting unusual crowd formations.</li>
+<li>Emergency Response: Identifying areas of high density for quick intervention.</li>
+<li><strong>Event Management</strong> </li>
+<li>Capacity Monitoring: Real-time tracking of crowd sizes in venues.</li>
+<li>Safety Compliance: Ensuring attendance stays within safe limits.</li>
+<li>Flow Analysis: Understanding movement patterns for better event planning.</li>
+<li><strong>Urban Planning</strong> </li>
+<li>Space Utilization: Analyzing how people use public spaces.</li>
+<li>Infrastructure Planning: Designing facilities based on crowd patterns.</li>
 </ul>
 <h2 id="explore-more">Explore More</h2>
 <ul>
-<li><a href="https://docs.ultralytics.com/models/yolo11/">Learn More About YOLO11 on the Official Ultralytics Documentation</a></li>
-<li><a href="https://www.linkedin.com/posts/ivan-apedo_ai-computervision-yolo11-activity-7266460747285602304-D_xR?utm_source=share&amp;utm_medium=member_desktop">Join the Discussion on LinkedIn</a>  </li>
+<li><a href="https://docs.ultralytics.com/solutions/">Contribute to Ultralytics Solutions</a></li>
+<li><a href="https://www.linkedin.com/posts/ivan-apedo_ai-computervision-yolo11-activity-7266460747285602304-D_xR?utm_source=share&amp;utm_medium=member_desktop">Author's LinkedIn</a>  </li>
 </ul>
 <p>Unlock the potential of advanced crowd monitoring using YOLO11 and streamline operations for various sectors! 🚀</p>
 
