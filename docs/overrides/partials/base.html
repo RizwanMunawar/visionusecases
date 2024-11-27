@@ -1,7 +1,9 @@
 {% extends "base.html" %}
+
 {% block extrahead %}
   <meta property="robots" content="noindex, nofollow" />
 {% endblock %}
+
 {% block meta %}
   {{ super() }}
   <!-- OpenGraph Meta Tags -->
@@ -17,4 +19,7 @@
   <meta name="twitter:title" content="{{ page.title | default(config.site_name) }}">
   <meta name="twitter:description" content="{{ config.site_description }}">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/open-graph-img.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ page.canonical_url | default(config.site_url + (page.url | default(''))) }}">
 {% endblock %}
