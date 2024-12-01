@@ -11,9 +11,9 @@ Discover real-world applications of computer vision across industries such as re
 - Crowd density estimation using Ultralytics YOLO11🚶‍♂️: [Learn more](https://visionusecases.com/usecases/crowd-density-estimation/)
 - Generate accurate segmentation masks Using Object Detection and SAM2 Model: [Read more](https://visionusecases.com/usecases/segmentation-masks-detect-sam2/)
 - Items segmentation and counting with Ultralytics YOLO11 ❤️‍🔥: [Learn more](https://visionusecases.com/usecases/items-segmentation-supermarket-ai/)
-- Apples counting on conveyor belt: 🍎 [Discover more](https://visionusecases.com/usecases/apple-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
-- Items counting in shopping trolley: 🛒 [Explore more](https://visionusecases.com/usecases/items-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
-- Bread counting on conveyor belt: 🍞 [Find more](https://visionusecases.com/usecases/bread-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
+- Apples counting on conveyor belt 🍎:  [Discover more](https://visionusecases.com/usecases/apple-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
+- Items counting in shopping trolley 🛒:  [Explore more](https://visionusecases.com/usecases/items-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
+- Bread counting on conveyor belt 🍞:  [Find more](https://visionusecases.com/usecases/bread-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
 
 ### Object Detection Use Cases:
 
