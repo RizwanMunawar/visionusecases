@@ -2,30 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://visionusecases.com/</loc>
-         <lastmod>2024-12-01</lastmod>
+         <lastmod>2024-12-04</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/apple-counting/</loc>
-         <lastmod>2024-12-01</lastmod>
+         <lastmod>2024-12-04</lastmod>
+    </url>
+    <url>
+         <loc>https://visionusecases.com/usecases/bird-tracking-with-tracks-visualization-on-empty-image/</loc>
+         <lastmod>2024-12-04</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/bread-counting/</loc>
-         <lastmod>2024-12-01</lastmod>
+         <lastmod>2024-12-04</lastmod>
+    </url>
+    <url>
+         <loc>https://visionusecases.com/usecases/computer-vision-project-workflow/</loc>
+         <lastmod>2024-12-04</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/crowd-density-estimation/</loc>
-         <lastmod>2024-12-01</lastmod>
+         <lastmod>2024-12-04</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/items-counting/</loc>
-         <lastmod>2024-12-01</lastmod>
+         <lastmod>2024-12-04</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/items-segmentation-supermarket-ai/</loc>
-         <lastmod>2024-12-01</lastmod>
+         <lastmod>2024-12-04</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/segmentation-masks-detect-sam2/</loc>
-         <lastmod>2024-12-01</lastmod>
+         <lastmod>2024-12-04</lastmod>
     </url>
 </urlset>
