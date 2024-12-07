@@ -8,28 +8,28 @@ Discover real-world applications of computer vision across industries such as re
 
 ### Computer Vision Use Cases:
 
-- Crowd density estimation using Ultralytics YOLO11🚶‍♂️: [Learn more](https://visionusecases.com/usecases/crowd-density-estimation/)
+- Crowd density estimation using Ultralytics YOLO11: [Learn more](https://visionusecases.com/usecases/crowd-density-estimation/)
 - Generate accurate segmentation masks Using Object Detection and SAM2 Model: [Read more](https://visionusecases.com/usecases/segmentation-masks-detect-sam2/)
-- Items segmentation and counting with Ultralytics YOLO11 ❤️‍🔥: [Learn more](https://visionusecases.com/usecases/items-segmentation-supermarket-ai/)
-- Apples counting on conveyor belt 🍎:  [Discover more](https://visionusecases.com/usecases/apple-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
-- Items counting in shopping trolley 🛒:  [Explore more](https://visionusecases.com/usecases/items-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
-- Bread counting on conveyor belt 🍞:  [Find more](https://visionusecases.com/usecases/bread-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
+- Items segmentation and counting with Ultralytics YOLO11: [Learn more](https://visionusecases.com/usecases/items-segmentation-supermarket-ai/)
+- Apples counting on conveyor belt:  [Discover more](https://visionusecases.com/usecases/apple-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
+- Items counting in shopping trolley:  [Explore more](https://visionusecases.com/usecases/items-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
+- Bread counting on conveyor belt:  [Find more](https://visionusecases.com/usecases/bread-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
 
 ### Object Detection Use Cases:
 
-- Waste Detection: 🚀 [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/VhzkygLZido)
-- Industrial Package Identification: 📦 [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/KGyP10JOwvw)
-- Crowd Density Estimation: 🚶‍♀️🚶‍♂️ [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://www.youtube.com/watch?v=38joFjkbRUs)
+- Waste Detection: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/VhzkygLZido)
+- Industrial Package Identification: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/KGyP10JOwvw)
+- Crowd Density Estimation: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://www.youtube.com/watch?v=38joFjkbRUs)
 
 ### Object Tracking Use Cases:
 
-- Vehicle Tracking: 🚗 [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/gUMvcrFeVUg)
+- Vehicle Tracking: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/gUMvcrFeVUg)
 
 ### Pose Estimation Use Cases:
 
--  Dog Pose Estimation: 🐾 [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/PmiWQgdTAuA)
+-  Dog Pose Estimation: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/PmiWQgdTAuA)
 
-### How to Contribute 😊
+### How to Contribute😊
 
 1- ✅ Necessary: Ensure your use case is computer vision-based. It can belong to any computer vision task no restrictions! 🎉
 
