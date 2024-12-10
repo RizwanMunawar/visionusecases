@@ -105,6 +105,7 @@ nav:
       - Item Counting in Trolleys for Smart Shopping: usecases/items-counting.md
       - Bread Counting on Conveyor Belt: usecases/bread-counting.md
       - Crowd Density Estimation: usecases/crowd-density-estimation.md
+      - Bird Tracking with Path Visualization: usecases/bird-tracking-with-tracks-visualization-on-empty-image.md
 plugins:
   - search:
       lang: en
