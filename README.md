@@ -29,9 +29,9 @@ Discover real-world applications of computer vision across industries such as re
 
 -  Dog Pose Estimation: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/PmiWQgdTAuA)
 
-### How to Contribute😊
+### How to Contribute 😊
 
-1- ✅ Necessary: Ensure your use case is computer vision-based. It can belong to any computer vision task no restrictions! 🎉
+1- ✅ Necessary: Ensure your use case is computer vision-based. It can belong to any computer vision task no restrictions!
 
 2- ✅ Optional: For better user experience, upload a video of your implementation to YouTube and attach the URL for the community to watch. This step is optional, but highly encouraged!
 
@@ -41,4 +41,4 @@ Discover real-world applications of computer vision across industries such as re
 
 4- ✅ Necessary: Update the mkdocs.yml file: Add the relevant path under the nav section to make your docs accessible.
 
-🎉 Final Step: Once all the changes are done, open the PR and If everything will look good, I will merge your PR! 🥳
+🎉 Final Step: Once all the changes are done, open the PR and If everything will look good, I will merge your PR!
