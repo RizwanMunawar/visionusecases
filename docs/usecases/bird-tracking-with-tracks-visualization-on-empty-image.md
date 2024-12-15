@@ -8,11 +8,10 @@ keywords: bird tracking, YOLO11, Ultralytics YOLO11, AI wildlife monitoring, bir
 
 Explore how to track birds and visualize their flight paths using [Ultralytics YOLO11](https://docs.ultralytics.com/models/yolo11/). This guide will show you how to detect birds, calculate flight paths, and visualize their movement using a custom-trained YOLO11 model.
 
-<div class="embed-container">
-  <iframe src="https://drive.google.com/file/d/1QkCcTqfZmB9aPIb9ml62je-A3hljdCR-/preview" 
-          allow="autoplay">
-  </iframe>
-</div>
+<figure>
+    <img width="1920" src="https://github.com/RizwanMunawar/visionusecases/releases/download/v1.0.0/bird-tracking-with-trajectory.avif" alt="Bird Tracking with Path Visualization Using Ultralytics YOLO11">
+    <figcaption>Fig-1: Bird Tracking with Path Visualization Using Ultralytics YOLO11.</figcaption>
+</figure>
 
 ### Step 1: Load the YOLO Model and Video
 
@@ -206,6 +205,13 @@ vwriter1.release()
 cap.release()  
 cv2.destroyAllWindows()  
 ```
+
+It's time to watch the Output 🚀
+<div class="embed-container">
+  <iframe src="https://drive.google.com/file/d/1QkCcTqfZmB9aPIb9ml62je-A3hljdCR-/preview" 
+          allow="autoplay">
+  </iframe>
+</div>
 
 ### Real World Applications
 
