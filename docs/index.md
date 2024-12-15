@@ -9,9 +9,10 @@ keywords: computer vision, object detection, object tracking, pose estimation, i
 <p>Watch a quick overview of our top computer vision projects in action 🚀</p>
 
 <div class="embed-container">
-  <iframe src="https://drive.google.com/file/d/1MQpoNwFQUXAh7vCcz8oQ_ymYAB0AAR-x/preview" 
-          allow="autoplay">
-  </iframe>
+  <video autoplay loop muted playsinline>
+    <source src="https://github.com/RizwanMunawar/visionusecases/releases/download/v1.0.0/computer-vision-use-cases-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 ## Object Detection | Advanced Applications
