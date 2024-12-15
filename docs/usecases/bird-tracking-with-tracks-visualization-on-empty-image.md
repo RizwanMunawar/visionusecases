@@ -208,9 +208,10 @@ cv2.destroyAllWindows()
 
 It's time to watch the Output 🚀
 <div class="embed-container">
-  <iframe src="https://drive.google.com/file/d/1QkCcTqfZmB9aPIb9ml62je-A3hljdCR-/preview" 
-          allow="autoplay">
-  </iframe>
+  <video controls autoplay loop>
+    <source src="https://github.com/RizwanMunawar/visionusecases/releases/download/v1.0.0/bird-tracking-with-trajectory.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 ### Real World Applications
