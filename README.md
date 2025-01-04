@@ -31,14 +31,14 @@ Discover real-world applications of computer vision across industries such as re
 
 ### How to Contribute 😊
 
-1- ✅ Necessary: Ensure your use case is computer vision-based. It can belong to any computer vision task no restrictions!
+1- Necessary: Ensure your use case is computer vision-based. It can belong to any computer vision task no restrictions!
 
-2- ✅ Optional: For better user experience, upload a video of your implementation to YouTube and attach the URL for the community to watch. This step is optional, but highly encouraged!
+2- Optional: For better user experience, upload a video of your implementation to YouTube and attach the URL for the community to watch. This step is optional, but highly encouraged!
 
-3- ✅ Necessary: Create a documentation page for your use case.
+3- Necessary: Create a documentation page for your use case.
 - Include implementation details such as hardware configuration, model usage, code with step by step explanation and advantages.
 - Place the file in the `usecases` folder.
 
-4- ✅ Necessary: Update the mkdocs.yml file: Add the relevant path under the nav section to make your docs accessible.
+4- Necessary: Update the mkdocs.yml file: Add the relevant path under the nav section to make your docs accessible.
 
 🎉 Final Step: Once all the changes are done, open the PR and If everything will look good, I will merge your PR!
