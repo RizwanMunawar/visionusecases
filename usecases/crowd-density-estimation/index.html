@@ -904,10 +904,10 @@
 <h3 id="step-1-setup-and-model-initialization">Step 1: Setup and Model Initialization</h3>
 <p>To get started, the code utilizes a pre-trained YOLO11 model for person detection. This model is loaded into the <code>CrowdDensityEstimation</code> class, which is designed to track individuals in a crowd and estimate crowd density in real time.</p>
 <h4 id="code-to-initialize-and-track-with-yolo11">Code to Initialize and Track with YOLO11</h4>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">from</span> <span class="nn">estimator</span> <span class="kn">import</span> <span class="n">CrowdDensityEstimation</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">estimator</span><span class="w"> </span><span class="kn">import</span> <span class="n">CrowdDensityEstimation</span>
 
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="n">estimator</span> <span class="o">=</span> <span class="n">CrowdDensityEstimation</span><span class="p">()</span>  
 
     <span class="c1"># Open video capture (0 for webcam, or video file path)</span>
@@ -950,13 +950,13 @@
 <div class="highlight"><pre><span></span><code><span class="c1"># Install ultralytics package</span>
 <span class="c1"># pip install ultralytics</span>
 
-<span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">ultralytics</span> <span class="kn">import</span> <span class="n">YOLO</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics</span><span class="w"> </span><span class="kn">import</span> <span class="n">YOLO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 
-<span class="k">class</span> <span class="nc">CrowdDensityEstimation</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_path</span><span class="o">=</span><span class="s1">&#39;yolo11n.pt&#39;</span><span class="p">,</span> <span class="n">conf_threshold</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">CrowdDensityEstimation</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_path</span><span class="o">=</span><span class="s1">&#39;yolo11n.pt&#39;</span><span class="p">,</span> <span class="n">conf_threshold</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">YOLO</span><span class="p">(</span><span class="n">model_path</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">conf_threshold</span> <span class="o">=</span> <span class="n">conf_threshold</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">track_history</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="p">[])</span>
@@ -967,13 +967,13 @@
             <span class="s1">&#39;Very High&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">))</span> <span class="c1"># &gt;0.8 persons/m²</span>
         <span class="p">}</span>
 
-    <span class="k">def</span> <span class="nf">extract_tracks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">extract_tracks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">):</span>
         <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">track</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="n">persist</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
                                    <span class="n">conf</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conf_threshold</span><span class="p">,</span> 
                                    <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
         <span class="k">return</span> <span class="n">results</span>
 
-    <span class="k">def</span> <span class="nf">calculate_density</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">,</span> <span class="n">frame_area</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calculate_density</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">,</span> <span class="n">frame_area</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">results</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="mi">0</span>
 
@@ -991,7 +991,7 @@
 <h3 id="step-3-visualizing-density-and-results">Step 3: Visualizing Density and Results</h3>
 <p>Once density is calculated, the processed frame is annotated with information like density level, person count, and a tracking visualization. This enhances situational awareness by providing clear visual cues.</p>
 <h4 id="displaying-density-information-on-video-frames">Displaying Density Information on Video Frames</h4>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">,</span> <span class="n">density_info</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">display_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">,</span> <span class="n">density_info</span><span class="p">):</span>
     <span class="n">density_value</span><span class="p">,</span> <span class="n">density_level</span><span class="p">,</span> <span class="n">person_count</span> <span class="o">=</span> <span class="n">density_info</span>
 
     <span class="n">cv2</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>

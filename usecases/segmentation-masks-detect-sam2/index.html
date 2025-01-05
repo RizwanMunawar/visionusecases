@@ -835,7 +835,7 @@
 <div class="annotate highlight"><pre><span></span><code><span class="c1"># Install the necessary library</span>
 <span class="c1"># pip install ultralytics</span>
 
-<span class="kn">from</span> <span class="nn">ultralytics.data.annotator</span> <span class="kn">import</span> <span class="n">auto_annotate</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics.data.annotator</span><span class="w"> </span><span class="kn">import</span> <span class="n">auto_annotate</span>
 
 <span class="c1"># Automatically annotate images using YOLO and SAM2 models</span>
 <span class="n">auto_annotate</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;Path/to/images/directory&quot;</span><span class="p">,</span>
@@ -846,10 +846,10 @@
 <p>Run the script to save segmentation masks as <code>.txt</code> files in the <code>images_auto_annotate_labels</code> folder.</p>
 <h3 id="step-4-visualize-the-results">Step 4: Visualize the Results</h3>
 <p>Use the following script to overlay segmentation masks on images.</p>
-<div class="annotate highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">ultralytics.utils.plotting</span> <span class="kn">import</span> <span class="n">colors</span>
+<div class="annotate highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics.utils.plotting</span><span class="w"> </span><span class="kn">import</span> <span class="n">colors</span>
 
 <span class="c1"># Define folder paths</span>
 <span class="n">image_folder</span> <span class="o">=</span> <span class="s2">&quot;images_directory&quot;</span>   <span class="c1"># Path to your images directory</span>

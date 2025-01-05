@@ -817,10 +817,10 @@
 <div class="highlight"><pre><span></span><code><span class="c1"># Install ultralytics package</span>
 <span class="c1"># pip install ultralytics</span>
 
-<span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">from</span> <span class="nn">ultralytics</span> <span class="kn">import</span> <span class="n">YOLO</span>
-<span class="kn">from</span> <span class="nn">ultralytics.utils.plotting</span> <span class="kn">import</span> <span class="n">Annotator</span><span class="p">,</span> <span class="n">colors</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics</span><span class="w"> </span><span class="kn">import</span> <span class="n">YOLO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics.utils.plotting</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotator</span><span class="p">,</span> <span class="n">colors</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
 
 <span class="n">model</span> <span class="o">=</span> <span class="n">YOLO</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;path/to/model/file.pt&quot;</span><span class="p">)</span>
 <span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s2">&quot;path/to/video/file.mp4&quot;</span><span class="p">)</span>
@@ -872,10 +872,10 @@
 
 <h3 id="step-3-count-segmented-objects">Step 3: Count Segmented Objects</h3>
 <p>Now, we have already drawn the object masks, we can now count the objects.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">from</span> <span class="nn">ultralytics</span> <span class="kn">import</span> <span class="n">YOLO</span>
-<span class="kn">from</span> <span class="nn">ultralytics.utils.plotting</span> <span class="kn">import</span> <span class="n">Annotator</span><span class="p">,</span> <span class="n">colors</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics</span><span class="w"> </span><span class="kn">import</span> <span class="n">YOLO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics.utils.plotting</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotator</span><span class="p">,</span> <span class="n">colors</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
 
 <span class="n">model</span> <span class="o">=</span> <span class="n">YOLO</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;path/to/model/file.pt&quot;</span><span class="p">)</span>
 <span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s2">&quot;path/to/video/file.mp4&quot;</span><span class="p">)</span>
