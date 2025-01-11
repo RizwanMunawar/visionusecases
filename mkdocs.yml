@@ -2,7 +2,6 @@
 
 # Configuration file for building the Computer Vision use cases documentation site using MkDocs.
 # Provides settings to control site metadata, customize the appearance using the
-# Material theme, define the navigation structure, and enable various plugins.
 
 # Site metadata
 site_name: Computer Vision Use Cases
