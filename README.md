@@ -4,7 +4,7 @@
 
 Discover real-world applications of computer vision across industries such as retail, transportation, healthcare, manufacturing, agriculture, and wildlife. Learn how cutting-edge AI models are used for object detection, image segmentation, object tracking, pose estimation, and more.
 
-🚀 Discover cutting-edge [computer vision use cases](https://rizwanmunawar.github.io/visionusecases/) that are shaping the future of AI and innovation 🚀 
+- Discover cutting-edge [computer vision use cases](https://rizwanmunawar.github.io/visionusecases/) that are shaping the future of AI and innovation.
 
 ### Computer Vision Use Cases:
 
@@ -29,7 +29,7 @@ Discover real-world applications of computer vision across industries such as re
 
 -  Dog Pose Estimation: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/PmiWQgdTAuA)
 
-### How to Contribute 😊
+### How to Contribute
 
 1- Ensure your use case is computer vision-based. It can belong to any computer vision task no restrictions!
 
