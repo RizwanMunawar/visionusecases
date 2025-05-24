@@ -41,4 +41,4 @@ Discover real-world applications of computer vision across industries such as re
 
 4- Update the mkdocs.yml file: Add the relevant path under the nav section to make your docs accessible.
 
-🎉 Final Step: Once all the changes are done, open the PR and If everything will look good, I will merge your PR!
+**Final Step:** Once all the changes are done, open the PR and If everything will look good, I will merge your PR!
