@@ -1,0 +1,123 @@
+/* Center navbar items */
+.md-header-nav {
+  justify-content: center;
+}
+
+/* Add hover effect */
+.md-nav__link:hover {
+  color: #111E68;
+  font-weight: bold;
+}
+
+/* Style dropdown menus */
+.md-nav__item--nested:hover > .md-nav__link {
+  color: #111E68;
+}
+
+/* Add this CSS to your mkdocs theme styles- */
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px; /* Adjust gap between cards */
+}
+
+.video-card {
+  flex: 1 1 calc(50% - 16px); /* Two cards side by side with gap */
+  max-width: calc(50% - 16px);
+}
+
+.video-card:nth-child(odd):not(:first-child) {
+  flex: 1 1 100%; /* Odd cards starting from 3rd take full width */
+  max-width: 100%;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 360px;
+}
+
+.video-card p {
+  text-align: center;
+  margin-top: 8px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+  }
+  figcaption {
+    font-size: 16px;
+    color: #555;
+    font
+    margin-top: 8px;
+  }
+
+
+/* For visual iframe and its div Styles for the parent div */
+.embed-container {
+    position: relative;
+    padding-top: 56.25%; /* Aspect ratio for 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+
+.embed-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures no stretching */
+}
+
+/* Style for iframe elements */
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Optional: Removes iframe border */
+}
+/* Style for the parent container */
+.embed-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+}
+
+/* Style for the iframe */
+.embed-wrapper iframe {
+    display: block; /* Ensure the iframe doesn't overlap the text */
+    width: 640px;
+    height: 360px;
+    border: none;
+    margin: 0 auto; /* Center the iframe */
+}
+
+/* Style for the caption text */
+.embed-wrapper span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+/* Styles for iframe elements, including those with a src */
+
+/* Styles for announcement bar elements */
+.custom-link {
+  color: #495057; /* General color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.custom-link:hover {
+  color: #ffffff; /* White on hover */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+/* Styles for announcement bar elements */
