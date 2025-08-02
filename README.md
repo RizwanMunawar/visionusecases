@@ -1,6 +1,6 @@
 ### Computer Vision Projects
 
-[![Deploy Computer Vision UseCases Docs](https://github.com/RizwanMunawar/visionusecases/actions/workflows/deploy.yml/badge.svg)](https://github.com/RizwanMunawar/visionusecases/actions/workflows/deploy.yml)
+[![Deployment](https://github.com/RizwanMunawar/visionusecases/actions/workflows/deploy.yml/badge.svg)](https://github.com/RizwanMunawar/visionusecases/actions/workflows/deploy.yml)
 
 Welcome to a collection of hands-on computer vision projects that demonstrate how AI can see and understand the world around us. From object detection and tracking to image segmentation, pose estimation, and automated annotation, these projects cover the core techniques powering modern vision systems.
 
