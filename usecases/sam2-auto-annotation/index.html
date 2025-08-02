@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Learn how to estimate crowd density using Ultralytics YOLO11 for efficient crowd monitoring and analysis.">
+        <meta name="description" content="Learn how to generate segmentation masks with object detection and SAM2 models for advanced image processing tasks.">
       
       
         <meta name="author" content="Muhammad Rizwan Munawar">
       
       
-        <link rel="canonical" href="https://visionusecases.com/usecases/crowd-density-estimation/">
+        <link rel="canonical" href="https://visionusecases.com/usecases/sam2-auto-annotation/">
       
       
-        <link rel="prev" href="../bread-counting/">
+        <link rel="prev" href="../items-segmentation/">
       
       
-        <link rel="next" href="../bird-tracking/">
+        <link rel="next" href="../apple-counting/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Crowd Density Estimation - Computer vision projects</title>
+        <title>SAM 2 auto annotation - Computer vision projects</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#accurate-crowd-density-estimation-using-ultralytics-yolo11" class="md-skip">
+        <a href="#how-to-generate-accurate-segmentation-masks-using-object-detection-and-sam2-model" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Crowd Density Estimation
+              SAM 2 auto annotation
             
           </span>
         </div>
@@ -425,10 +425,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../sam2-auto-annotation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SAM 2 auto annotation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -439,6 +461,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-and-software-setup-for-this-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware and Software Setup for This Demo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-generate-segmentation-masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Generate Segmentation Masks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Generate Segmentation Masks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-prepare-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Prepare the Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-auto-annotation-with-sam2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Auto Annotation with SAM2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-generate-and-save-masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Generate and Save Masks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-visualize-the-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Visualize the Results
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-more" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explore More
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -517,32 +637,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Crowd Density Estimation
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../crowd-density-estimation/" class="md-nav__link">
         
   
   
@@ -553,140 +651,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#system-specifications-used-for-this-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Specifications Used for This Implementation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-implement-crowd-density-estimation" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to Implement Crowd Density Estimation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to Implement Crowd Density Estimation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-setup-and-model-initialization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1: Setup and Model Initialization
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 1: Setup and Model Initialization">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-to-initialize-and-track-with-yolo11" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code to Initialize and Track with YOLO11
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-real-time-crowd-detection-and-tracking" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Real-Time Crowd Detection and Tracking
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 2: Real-Time Crowd Detection and Tracking">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-for-crowd-density-estimation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code for Crowd Density Estimation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-visualizing-density-and-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3: Visualizing Density and Results
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 3: Visualizing Density and Results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#displaying-density-information-on-video-frames" class="md-nav__link">
-    <span class="md-ellipsis">
-      Displaying Density Information on Video Frames
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#applications-of-crowd-density-estimation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applications of Crowd Density Estimation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#explore-more" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explore More
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -749,93 +713,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-specifications-used-for-this-implementation" class="md-nav__link">
+  <a href="#hardware-and-software-setup-for-this-demo" class="md-nav__link">
     <span class="md-ellipsis">
-      System Specifications Used for This Implementation
+      Hardware and Software Setup for This Demo
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-implement-crowd-density-estimation" class="md-nav__link">
+  <a href="#how-to-generate-segmentation-masks" class="md-nav__link">
     <span class="md-ellipsis">
-      How to Implement Crowd Density Estimation
+      How to Generate Segmentation Masks
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How to Implement Crowd Density Estimation">
+    <nav class="md-nav" aria-label="How to Generate Segmentation Masks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-setup-and-model-initialization" class="md-nav__link">
+  <a href="#step-1-prepare-the-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Setup and Model Initialization
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 1: Setup and Model Initialization">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-to-initialize-and-track-with-yolo11" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code to Initialize and Track with YOLO11
+      Step 1: Prepare the Model
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#step-2-real-time-crowd-detection-and-tracking" class="md-nav__link">
+  <a href="#step-2-auto-annotation-with-sam2" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Real-Time Crowd Detection and Tracking
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 2: Real-Time Crowd Detection and Tracking">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-for-crowd-density-estimation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code for Crowd Density Estimation
+      Step 2: Auto Annotation with SAM2
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#step-3-visualizing-density-and-results" class="md-nav__link">
+  <a href="#step-3-generate-and-save-masks" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Visualizing Density and Results
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 3: Visualizing Density and Results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#displaying-density-information-on-video-frames" class="md-nav__link">
-    <span class="md-ellipsis">
-      Displaying Density Information on Video Frames
+      Step 3: Generate and Save Masks
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#step-4-visualize-the-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Visualize the Results
+    </span>
+  </a>
   
 </li>
         
@@ -845,9 +773,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#applications-of-crowd-density-estimation" class="md-nav__link">
+  <a href="#real-world-applications" class="md-nav__link">
     <span class="md-ellipsis">
-      Applications of Crowd Density Estimation
+      Real-World Applications
     </span>
   </a>
   
@@ -878,7 +806,7 @@
 
 
   
-    <a href="https://github.com/RizwanMunawar/visionusecases/tree/main/docs/usecases/crowd-density-estimation.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/RizwanMunawar/visionusecases/tree/main/docs/usecases/sam2-auto-annotation.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -886,151 +814,110 @@
   
 
 
-<h1 id="accurate-crowd-density-estimation-using-ultralytics-yolo11">Accurate Crowd Density Estimation Using Ultralytics YOLO11 🎯</h1>
-<p>Discover how to utilize <a href="https://docs.ultralytics.com/models/yolo11/">Ultralytics YOLO11</a> for accurate crowd density estimation. This guide will take you through a step-by-step implementation using a YOLO11-based system to measure and monitor crowd density in various environments, improving safety and event management capabilities.</p>
-<div class="embed-container">
-  <iframe src="https://drive.google.com/file/d/1kF1AZbLWOsMzQOoU_mFeonxB-4ysgawz/preview" 
-          allow="autoplay">
-  </iframe>
-</div>
+<h1 id="how-to-generate-accurate-segmentation-masks-using-object-detection-and-sam2-model">How to Generate Accurate Segmentation Masks Using Object Detection and SAM2 Model</h1>
+<p>Segmentation masks are vital for precise object tracking and analysis, allowing pixel-level identification of objects. By leveraging a fine-tuned <a href="https://docs.ultralytics.com/models/yolo11/">Ultralytics YOLO11</a> model alongside the <a href="https://docs.ultralytics.com/models/sam-2/">Segment Anything 2 (SAM2)</a> model, you can achieve unparalleled accuracy and flexibility in your workflows.</p>
+<figure>
+    <img width="1920" src="https://github.com/user-attachments/assets/22e98b87-f446-464c-acef-54e32853d076" alt="Instance Segmentation with YOLO11 and SAM2">
+    <figcaption>Fig-1: Instance segmentation using Ultralytics YOLO11 and <a href="https://docs.ultralytics.com/models/sam-2/">SAM2 model</a>.</figcaption>
+</figure>
 
-<h2 id="system-specifications-used-for-this-implementation">System Specifications Used for This Implementation</h2>
+<h2 id="hardware-and-software-setup-for-this-demo">Hardware and Software Setup for This Demo</h2>
 <ul>
-<li><strong>CPU</strong>: Intel® Core™ i7-10700 CPU @ 2.90GHz for efficient processing.</li>
-<li><strong>GPU</strong>: NVIDIA RTX 3060 for faster object detection.</li>
-<li><strong>RAM &amp; Storage</strong>: 32 GB RAM and 512 GB SSD for optimal performance.</li>
-<li><strong>Model</strong>: Pre-trained YOLO11 model for person detection.</li>
-<li><strong>Dataset</strong>: Custom dataset for various crowd scenarios to fine-tune YOLO11 performance.</li>
+<li><strong>CPU</strong>: Intel® Core™ i5-10400 CPU @ 2.90GHz for efficient processing.  </li>
+<li><strong>GPU</strong>: NVIDIA RTX 3050 for real-time tasks.  </li>
+<li><strong>RAM and Storage</strong>: 64 GB RAM and 1TB hard disk for seamless performance.  </li>
+<li><strong>Model</strong>: Fine-tuned YOLO11 model for object detection.  </li>
+<li><strong>Dataset</strong>: Custom annotated dataset for maximum accuracy.</li>
 </ul>
-<h2 id="how-to-implement-crowd-density-estimation">How to Implement Crowd Density Estimation</h2>
-<h3 id="step-1-setup-and-model-initialization">Step 1: Setup and Model Initialization</h3>
-<p>To get started, the code utilizes a pre-trained YOLO11 model for person detection. This model is loaded into the <code>CrowdDensityEstimation</code> class, which is designed to track individuals in a crowd and estimate crowd density in real time.</p>
-<h4 id="code-to-initialize-and-track-with-yolo11">Code to Initialize and Track with YOLO11</h4>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">estimator</span><span class="w"> </span><span class="kn">import</span> <span class="n">CrowdDensityEstimation</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-    <span class="n">estimator</span> <span class="o">=</span> <span class="n">CrowdDensityEstimation</span><span class="p">()</span>  
-
-    <span class="c1"># Open video capture (0 for webcam, or video file path)</span>
-    <span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s2">&quot;path/to/video/file.mp4&quot;</span><span class="p">)</span>
-
-    <span class="c1"># Get video properties for output</span>
-    <span class="n">frame_width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FRAME_WIDTH</span><span class="p">))</span>
-    <span class="n">frame_height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FRAME_HEIGHT</span><span class="p">))</span>
-    <span class="n">fps</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">CAP_PROP_FPS</span><span class="p">))</span>
-    <span class="n">fourcc</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoWriter_fourcc</span><span class="p">(</span><span class="o">*</span><span class="s1">&#39;mp4v&#39;</span><span class="p">)</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoWriter</span><span class="p">(</span><span class="s1">&#39;crowd-density-estimation.mp4&#39;</span><span class="p">,</span> 
-                          <span class="n">fourcc</span><span class="p">,</span> <span class="n">fps</span><span class="p">,</span> <span class="p">(</span><span class="n">frame_width</span><span class="p">,</span> <span class="n">frame_height</span><span class="p">))</span>
-
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">ret</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">cap</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">ret</span><span class="p">:</span>
-            <span class="k">break</span>
-        <span class="n">processed_frame</span><span class="p">,</span> <span class="n">density_info</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">process_frame</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
-        <span class="n">estimator</span><span class="o">.</span><span class="n">display_output</span><span class="p">(</span><span class="n">processed_frame</span><span class="p">,</span> <span class="n">density_info</span><span class="p">)</span>  <span class="c1"># Display</span>
-        <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">processed_frame</span><span class="p">)</span>  <span class="c1"># Write output frame</span>
-        <span class="k">if</span> <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;q&#39;</span><span class="p">):</span>
-            <span class="k">break</span>
-
-    <span class="n">cap</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
-    <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">()</span>
-</code></pre></div>
-<p>This setup captures frames from a video source, processes them using YOLO11 to detect people, and calculates crowd density.</p>
-<h3 id="step-2-real-time-crowd-detection-and-tracking">Step 2: Real-Time Crowd Detection and Tracking</h3>
-<p>The core of the implementation relies on tracking individuals in each frame using the YOLO11 model and estimating the crowd density. This is achieved through a series of steps, which include detecting people, calculating density, and classifying the crowd level.</p>
-<h4 id="code-for-crowd-density-estimation">Code for Crowd Density Estimation</h4>
-<p>The main class <code>CrowdDensityEstimation</code> includes the following functionality:</p>
-<ul>
-<li><strong>Person Detection</strong>: Using YOLO11 to detect individuals in each frame.</li>
-<li><strong>Density Calculation</strong>: Based on the number of detected persons relative to the frame area.</li>
-<li><strong>Tracking</strong>: Visualization of tracking history for each detected person.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Install ultralytics package</span>
+<h2 id="how-to-generate-segmentation-masks">How to Generate Segmentation Masks</h2>
+<h3 id="step-1-prepare-the-model">Step 1: Prepare the Model</h3>
+<p>Train or fine-tune a custom YOLO11 model, or use the <a href="https://docs.ultralytics.com/models/">Ultralytics Pretrained Models</a> for object detection tasks.</p>
+<h3 id="step-2-auto-annotation-with-sam2">Step 2: Auto Annotation with SAM2</h3>
+<p>Integrate the SAM2 model to convert bounding boxes into segmentation masks.</p>
+<div class="annotate highlight"><pre><span></span><code><span class="c1"># Install the necessary library</span>
 <span class="c1"># pip install ultralytics</span>
 
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics.data.annotator</span><span class="w"> </span><span class="kn">import</span> <span class="n">auto_annotate</span>
+
+<span class="c1"># Automatically annotate images using YOLO and SAM2 models</span>
+<span class="n">auto_annotate</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;Path/to/images/directory&quot;</span><span class="p">,</span>
+              <span class="n">det_model</span><span class="o">=</span><span class="s2">&quot;yolo11n.pt&quot;</span><span class="p">,</span>
+              <span class="n">sam_model</span><span class="o">=</span><span class="s2">&quot;sam2_b.pt&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="step-3-generate-and-save-masks">Step 3: Generate and Save Masks</h3>
+<p>Run the script to save segmentation masks as <code>.txt</code> files in the <code>images_auto_annotate_labels</code> folder.</p>
+<h3 id="step-4-visualize-the-results">Step 4: Visualize the Results</h3>
+<p>Use the following script to overlay segmentation masks on images.</p>
+<div class="annotate highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics</span><span class="w"> </span><span class="kn">import</span> <span class="n">YOLO</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ultralytics.utils.plotting</span><span class="w"> </span><span class="kn">import</span> <span class="n">colors</span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">CrowdDensityEstimation</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_path</span><span class="o">=</span><span class="s1">&#39;yolo11n.pt&#39;</span><span class="p">,</span> <span class="n">conf_threshold</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">YOLO</span><span class="p">(</span><span class="n">model_path</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">conf_threshold</span> <span class="o">=</span> <span class="n">conf_threshold</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">track_history</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="p">[])</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">density_levels</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s1">&#39;Low&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span> <span class="c1"># 0-0.2 persons/m²</span>
-            <span class="s1">&#39;Medium&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="c1"># 0.2-0.5 persons/m²</span>
-            <span class="s1">&#39;High&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">),</span> <span class="c1"># 0.5-0.8 persons/m²</span>
-            <span class="s1">&#39;Very High&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">))</span> <span class="c1"># &gt;0.8 persons/m²</span>
-        <span class="p">}</span>
+<span class="c1"># Define folder paths</span>
+<span class="n">image_folder</span> <span class="o">=</span> <span class="s2">&quot;images_directory&quot;</span>   <span class="c1"># Path to your images directory</span>
+<span class="n">mask_folder</span> <span class="o">=</span> <span class="s2">&quot;images_auto_annotate_labels&quot;</span> <span class="c1"># Annotation masks directory</span>
+<span class="n">output_folder</span> <span class="o">=</span> <span class="s2">&quot;output_directory&quot;</span>  <span class="c1"># Path to save output images</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">extract_tracks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">):</span>
-        <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">track</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="n">persist</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
-                                   <span class="n">conf</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conf_threshold</span><span class="p">,</span> 
-                                   <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="k">return</span> <span class="n">results</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_folder</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">calculate_density</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">results</span><span class="p">,</span> <span class="n">frame_area</span><span class="p">):</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">results</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="mi">0</span>
+<span class="c1"># Process each image</span>
+<span class="k">for</span> <span class="n">image_file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_folder</span><span class="p">):</span>
+    <span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">image_folder</span><span class="p">,</span> <span class="n">image_file</span><span class="p">)</span>
+    <span class="n">mask_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mask_folder</span><span class="p">,</span> 
+                             <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image_file</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
 
-        <span class="n">person_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">boxes</span><span class="p">)</span>
-        <span class="n">density_value</span> <span class="o">=</span> <span class="n">person_count</span> <span class="o">/</span> <span class="n">frame_area</span> <span class="o">*</span> <span class="mi">10000</span>  
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>   <span class="c1"># Load the image</span>
+    <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span>
 
-        <span class="n">density_level</span> <span class="o">=</span> <span class="s1">&#39;Low&#39;</span>
-        <span class="k">for</span> <span class="n">level</span><span class="p">,</span> <span class="p">(</span><span class="n">min_val</span><span class="p">,</span> <span class="n">max_val</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">density_levels</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="k">if</span> <span class="n">min_val</span> <span class="o">&lt;=</span> <span class="n">density_value</span> <span class="o">&lt;</span> <span class="n">max_val</span><span class="p">:</span>
-                <span class="n">density_level</span> <span class="o">=</span> <span class="n">level</span>
-                <span class="k">break</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mask_file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>  <span class="c1"># Read the mask file</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 
-        <span class="k">return</span> <span class="n">density_value</span><span class="p">,</span> <span class="n">density_level</span><span class="p">,</span> <span class="n">person_count</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="kc">True</span><span class="p">)</span>
+
+        <span class="c1"># Convert points to absolute coordinates</span>
+        <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="n">height</span><span class="p">)</span> 
+                           <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="mi">2</span><span class="p">)],</span> 
+                           <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+        <span class="n">overlay</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">fillPoly</span><span class="p">(</span><span class="n">overlay</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+        <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.6</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">overlay</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">polylines</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">[</span><span class="n">points</span><span class="p">],</span> <span class="n">isClosed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="c1"># Save the output</span>
+    <span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_folder</span><span class="p">,</span> <span class="n">image_file</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processed </span><span class="si">{</span><span class="n">image_file</span><span class="si">}</span><span class="s2"> and saved to </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Processing complete.&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="step-3-visualizing-density-and-results">Step 3: Visualizing Density and Results</h3>
-<p>Once density is calculated, the processed frame is annotated with information like density level, person count, and a tracking visualization. This enhances situational awareness by providing clear visual cues.</p>
-<h4 id="displaying-density-information-on-video-frames">Displaying Density Information on Video Frames</h4>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">display_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im0</span><span class="p">,</span> <span class="n">density_info</span><span class="p">):</span>
-    <span class="n">density_value</span><span class="p">,</span> <span class="n">density_level</span><span class="p">,</span> <span class="n">person_count</span> <span class="o">=</span> <span class="n">density_info</span>
+<figure>
+    <img width="1920" src="https://github.com/user-attachments/assets/e4afe41f-8da0-4095-9b3a-f2d2e736350b" alt="Visualization of Instance Segmentation">
+    <figcaption>Fig-2: Visualization of instance segmentation results.</figcaption>
+</figure>
 
-    <span class="n">cv2</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<p>That's it! After completing <a href="#step-4-visualize-the-results">Step 4</a>, you'll be able to segment objects and view the total count for each segmented object in every frame.</p>
+<h2 id="real-world-applications">Real-World Applications</h2>
+<ul>
+<li><strong>Medical Imaging</strong>: Segment organs and anomalies in scans for diagnostics.  </li>
+<li><strong>Retail Analytics</strong>: Detect and segment customer activities or products.  </li>
+<li><strong>Robotics</strong>: Enable robots to identify objects in dynamic environments.  </li>
+<li><strong>Satellite Imagery</strong>: Analyze vegetation and urban areas for planning.</li>
+</ul>
+<figure>
+    <img width="1920" src="https://github.com/user-attachments/assets/2d0d68c0-af6c-4c3a-9b05-fe81e4987fa0" alt="Applications of Instance Segmentation">
+    <figcaption>Fig-3: Applications of instance segmentation in various fields.</figcaption>
+</figure>
 
-    <span class="n">cv2</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;Density Level: </span><span class="si">{</span><span class="n">density_level</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span>
-                <span class="n">cv2</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">cv2</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;Person Count: </span><span class="si">{</span><span class="n">person_count</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">70</span><span class="p">),</span>
-                <span class="n">cv2</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">cv2</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">im0</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;Density Value: </span><span class="si">{</span><span class="n">density_value</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span>
-                <span class="n">cv2</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
-
-    <span class="c1"># Display the frame</span>
-    <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s1">&#39;Crowd Density Estimation&#39;</span><span class="p">,</span> <span class="n">im0</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="applications-of-crowd-density-estimation">Applications of Crowd Density Estimation</h2>
-<p>1- <strong>Public Safety</strong> </p>
-<ul>
-<li>Early Warning System: Detecting unusual crowd formations.</li>
-<li>Emergency Response: Identifying areas of high density for quick intervention.</li>
-</ul>
-<p>2- <strong>Event Management</strong> </p>
-<ul>
-<li>Capacity Monitoring: Real-time tracking of crowd sizes in venues.</li>
-<li>Safety Compliance: Ensuring attendance stays within safe limits.</li>
-<li>Flow Analysis: Understanding movement patterns for better event planning.</li>
-</ul>
-<p>3- <strong>Urban Planning</strong> </p>
-<ul>
-<li>Space Utilization: Analyzing how people use public spaces.</li>
-<li>Infrastructure Planning: Designing facilities based on crowd patterns.</li>
-</ul>
 <h2 id="explore-more">Explore More</h2>
 <ul>
-<li><a href="https://docs.ultralytics.com/solutions/">Contribute to Ultralytics Solutions</a></li>
-<li><a href="https://www.linkedin.com/posts/ivan-apedo_ai-computervision-yolo11-activity-7266460747285602304-D_xR?utm_source=share&amp;utm_medium=member_desktop">Author's LinkedIn Post Discussion</a>  </li>
+<li><a href="https://docs.ultralytics.com/guides/instance-segmentation-and-tracking/">Ultralytics Documentation</a>  </li>
+<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7264975021058482177/">Engage on LinkedIn</a>  </li>
 </ul>
-<p>Unlock the potential of advanced crowd monitoring using YOLO11 and streamline operations for various sectors! 🚀</p>
+<p>Start building your object segmentation workflow today!🚀</p>
 
 
 
@@ -1079,7 +966,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../bread-counting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bread Counting">
+          <a href="../items-segmentation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Items segmentation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1089,20 +976,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Bread Counting
+                Items segmentation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../bird-tracking/" class="md-footer__link md-footer__link--next" aria-label="Next: Bird Tracking">
+          <a href="../apple-counting/" class="md-footer__link md-footer__link--next" aria-label="Next: Apple counting">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Bird Tracking
+                Apple counting
               </div>
             </div>
             <div class="md-footer__button md-icon">

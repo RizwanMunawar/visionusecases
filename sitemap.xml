@@ -2,74 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://visionusecases.com/</loc>
-         <lastmod>2025-06-29</lastmod>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/apple-counting/</loc>
-         <lastmod>2025-06-29</lastmod>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://visionusecases.com/usecases/bird-tracking-with-tracks-visualization-on-empty-image/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/blur-faces-in-shopping-mall/</loc>
-         <lastmod>2025-06-29</lastmod>
+         <loc>https://visionusecases.com/usecases/bird-tracking/</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/bread-counting/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/cauli-flowers-analytics/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/computer-vision-project-workflow/</loc>
-         <lastmod>2025-06-29</lastmod>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/crowd-density-estimation/</loc>
-         <lastmod>2025-06-29</lastmod>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
          <loc>https://visionusecases.com/usecases/items-counting/</loc>
-         <lastmod>2025-06-29</lastmod>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://visionusecases.com/usecases/items-segmentation-supermarket-ai/</loc>
-         <lastmod>2025-06-29</lastmod>
+         <loc>https://visionusecases.com/usecases/items-segmentation/</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://visionusecases.com/usecases/sam2.1-vs-samurai/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/segmentation-masks-detect-sam2/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/snooker-game-monitoring/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/solar-panels-counting/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/solar-panels-on-house/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/track-objects-in-zone/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/traffic-counting-in-zones/</loc>
-         <lastmod>2025-06-29</lastmod>
-    </url>
-    <url>
-         <loc>https://visionusecases.com/usecases/workouts-monitoring/</loc>
-         <lastmod>2025-06-29</lastmod>
+         <loc>https://visionusecases.com/usecases/sam2-auto-annotation/</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
 </urlset>
