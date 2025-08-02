@@ -1,1 +1,0 @@
-# Solar Panels Counting using Ultralytics YOLO11

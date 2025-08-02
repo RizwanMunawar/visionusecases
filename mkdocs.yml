@@ -1,11 +1,7 @@
-# Computer Vision Use Cases Video Demos 🚀, AGPL-3.0 license
-
 # Configuration file for building the Computer Vision use cases documentation site using MkDocs.
-# Provides settings to control site metadata, customize the appearance using the
 
-# Site metadata
-site_name: Computer Vision Use Cases
-site_description: Discover computer vision use cases in retail, transportation, healthcare, manufacturing, agriculture, and more, featuring object detection, segmentation, tracking, and pose estimation with advanced models.
+site_name: Computer vision projects
+site_description: Explore real-world computer vision projects showcasing object detection, segmentation, pose estimation, and tracking. Discover AI applications across retail, transportation, healthcare, manufacturing, and agriculture, with code and documentation from hands-on implementations.
 site_url: https://visionusecases.com/
 site_author: Muhammad Rizwan Munawar
 repo_url: https://github.com/RizwanMunawar/visionusecases
@@ -18,8 +14,6 @@ theme:
   name: material
   language: en
   custom_dir: docs/overrides/
-  logo: https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases-logo.png
-  favicon: https://raw.githubusercontent.com/RizwanMunawar/visionusecases/main/docs/assets/vision-usecases.ico
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -68,14 +62,20 @@ markdown_extensions:
   - codehilite:
       guess_lang: false
       use_pygments: true
-copyright: <a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024 Computer Vision Use Cases.❤️</a> All rights reserved.
+copyright: <a href="https://github.com/RizwanMunawar/visionusecases" target="_blank">© 2024-25 Computer vision projects.❤️</a> All rights reserved.
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/RizwanMunawar/visionusecases
-      name: Computer Vision Use Cases
+      name: Computer vision projects
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/muhammadrizwanmunawar/
+      name: Muhammad Rizwan Munawar
+    - icon: fontawesome/brands/x-twitter
+      link: http://x.com/muhammdrizwanmr/
+      name: Muhammad Rizwan Munawar
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@muhammadrizwanmunawar
       name: Muhammad Rizwan Munawar
   manifest: manifest.webmanifest
   robots: robots.txt
@@ -96,15 +96,15 @@ validation:
     anchors: warn
     unrecognized_links: warn
 nav:
-  - Computer Vision Use Cases:
-      - Computer Vision Use Cases: index.md
-      - Items segmentation in supermarket using computer vision: usecases/items-segmentation-supermarket-ai.md
-      - Segmentation masks with object detection model + SAM2: usecases/segmentation-masks-detect-sam2.md
-      - Apple Counting on Conveyor Belt: usecases/apple-counting.md
-      - Item Counting in Trolleys for Smart Shopping: usecases/items-counting.md
-      - Bread Counting on Conveyor Belt: usecases/bread-counting.md
+  - computer vision projects:
+      - Home: index.md
+      - Items segmentation: usecases/items-segmentation.md
+      - SAM 2 auto annotation: usecases/sam2-auto-annotation.md
+      - Apple counting: usecases/apple-counting.md
+      - Items counting: usecases/items-counting.md
+      - Bread Counting: usecases/bread-counting.md
       - Crowd Density Estimation: usecases/crowd-density-estimation.md
-      - Bird Tracking with Path Visualization: usecases/bird-tracking-with-tracks-visualization-on-empty-image.md
+      - Bird Tracking: usecases/bird-tracking.md
 plugins:
   - search:
       lang: en
@@ -138,3 +138,6 @@ plugins:
         count/apple-counting.md: usecases/apple-counting.md
         count/bread-counting.md: usecases/bread-counting.md
         count/items-counting.md: usecases/items-counting.md
+        usecases/items-segmentation-supermarket-ai.md: usecases/items-segmentation.md
+        usecases/segmentation-masks-detect-sam2.md: usecases/sam2-auto-annotation.md
+        usecases/bird-tracking-with-tracks-visualization-on-empty-image.md: usecases/bird-tracking.md
