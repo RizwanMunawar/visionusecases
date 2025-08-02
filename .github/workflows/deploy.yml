@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # Deploy whenever main branch is updated
+  workflow_dispatch:  # Allow manual trigger from GitHub Actions tab
 
 permissions:
   contents: read
