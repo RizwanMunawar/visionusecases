@@ -6,28 +6,21 @@ Discover real-world applications of computer vision across industries such as re
 
 - Discover cutting-edge [computer vision use cases](https://rizwanmunawar.github.io/visionusecases/) that are shaping the future of AI and innovation.
 
-### Computer Vision Use Cases:
+# Computer Vision Projects
 
-- Crowd density estimation using Ultralytics YOLO11: [Learn more](https://visionusecases.com/usecases/crowd-density-estimation/)
-- Generate accurate segmentation masks Using Object Detection and SAM2 Model: [Read more](https://visionusecases.com/usecases/segmentation-masks-detect-sam2/)
-- Items segmentation and counting with Ultralytics YOLO11: [Learn more](https://visionusecases.com/usecases/items-segmentation-supermarket-ai/)
-- Apples counting on conveyor belt:  [Discover more](https://visionusecases.com/usecases/apple-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
-- Items counting in shopping trolley:  [Explore more](https://visionusecases.com/usecases/items-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
-- Bread counting on conveyor belt:  [Find more](https://visionusecases.com/usecases/bread-counting/) | [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
+Welcome to a collection of hands-on computer vision projects that demonstrate how AI can see and understand the world around us. From object detection and tracking to image segmentation, pose estimation, and automated annotation, these projects cover the core techniques powering modern vision systems.
 
-### Object Detection Use Cases:
+Whether you’re working on retail automation, traffic monitoring, agriculture analytics, manufacturing quality control, or wildlife research, you’ll find practical examples here built with Ultralytics YOLO models i.e. [Ultralytics YOLOv8](https://docs.ultralytics.com/models/yolov8/) and [YOLO11](https://docs.ultralytics.com/models/yolo11/) and advanced tools like [Segment Anything Model 2 (SAM 2)](https://docs.ultralytics.com/models/sam-2/). Each project includes code and documentation so you can learn, adapt, and apply these methods to your own real-world applications.
 
-- Waste Detection: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/VhzkygLZido)
-- Industrial Package Identification: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/KGyP10JOwvw)
-- Crowd Density Estimation: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://www.youtube.com/watch?v=38joFjkbRUs)
-
-### Object Tracking Use Cases:
-
-- Vehicle Tracking: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/gUMvcrFeVUg)
-
-### Pose Estimation Use Cases:
-
--  Dog Pose Estimation: [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/PmiWQgdTAuA)
+| Project name                                                                 |                     Code                     | Docs | Description                                                                                                                                                                            |
+|------------------------------------------------------------------------------|:--------------------------------------------:|:----:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Apple Counting on Conveyor Belt](usecases/apple-counting.md)                |      [Code](usecases/apple-counting.md)      |  ✅   | Perform real-time apple counting on conveyor belts using Ultralytics YOLO11. Ideal for automated quality control and inventory management in food processing and packaging industries. |
+| [Birds Tracking in Air](usecases/bird-tracking.md)                           |      [Code](usecases/bird-tracking.md)       |  ✅   | Track multiple birds in flight using advanced YOLO object tracking models to study migration patterns, monitor wildlife behavior, or enhance aviation safety.                          |
+| [Bread Counting in Baking Area on Conveyor Belt](usecases/bread-counting.md) |      [Code](usecases/bread-counting.md)      |  ✅   | Implement real-time bread counting during baking and packaging with YOLO-based systems, optimizing production lines and reducing manual labor.                                         |
+| [Crowd Density Estimation](usecases/crowd-density-estimation.md)             | [Code](usecases/crowd-density-estimation.md) |  ✅   | Estimate crowd density in public areas using computer vision and YOLO detection to improve event management, security, and space utilization.                                          |
+| [Items Counting in Shopping Trolley](usecases/items-counting.md)             |      [Code](usecases/items-counting.md)      |  ✅   | Automatically count retail items in shopping trolleys for self-checkout automation, retail analytics, and loss prevention using YOLO models.                                           |
+| [Items Segmentation in Supermarket](usecases/items-segmentation.md)          |    [Code](usecases/items-segmentation.md)    |  ✅   | Perform item segmentation in supermarkets using YOLO’s instance segmentation for real-time shelf monitoring, inventory tracking, and product placement insights.                       |
+| [Auto Annotation using SAM 2](usecases/sam2-auto-annotation.md)              |   [Code](usecases/sam2-auto-annotation.md)   |  ✅   | Speed up dataset preparation by leveraging Segment Anything Model 2 (SAM2) for automated annotation in retail, manufacturing, and research computer vision workflows.                  |
 
 ### How to Contribute
 
