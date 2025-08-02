@@ -1,132 +1,24 @@
 ---
 comments: true
-description: Discover computer vision use cases and projects with VisionAI models, including object detection, segmentation, pose estimation for diverse industries.
-keywords: computer vision, object detection, object tracking, pose estimation, image segmentation, object counting, Ultralytics YOLO, AI projects, industrial automation, real-world applications, VisionAI models, heatmaps, parking management, oriented bounding boxes, yolo11, yolov10, yolov8, yolov9, flask, streamlit
+description: Explore practical computer vision projects and use cases built with Ultralytics YOLO models. Learn about object detection, segmentation, tracking, and pose estimation across industries like retail, transportation, healthcare, manufacturing, and agriculture.
+keywords: computer vision, object detection, object tracking, pose estimation, image segmentation, object counting, YOLOv8, YOLOv9, YOLOv10, YOLO11, AI projects, industrial automation, real-world applications, heatmaps, parking management, oriented bounding boxes, VisionAI, Flask, Streamlit
 ---
 
-# Computer Vision Use Cases | Detection, Segmentation and More
+# Computer Vision Projects
 
-<p>Watch a quick overview of our top computer vision projects in action 🚀</p>
+Welcome to a collection of hands-on computer vision projects that demonstrate how AI can see and understand the world around us. From object detection and tracking to image segmentation, pose estimation, and automated annotation, these projects cover the core techniques powering modern vision systems.
 
-<div class="embed-container">
-  <video autoplay loop muted playsinline>
-    <source src="https://github.com/RizwanMunawar/visionusecases/releases/download/v1.0.0/computer-vision-use-cases-demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+Whether you’re working on retail automation, traffic monitoring, agriculture analytics, manufacturing quality control, or wildlife research, you’ll find practical examples here built with Ultralytics YOLO models i.e. [Ultralytics YOLOv8](https://docs.ultralytics.com/models/yolov8/) and [YOLO11](https://docs.ultralytics.com/models/yolo11/) and advanced tools like [Segment Anything Model 2 (SAM 2)](https://docs.ultralytics.com/models/sam-2/). Each project includes code and documentation so you can learn, adapt, and apply these methods to your own real-world applications.
 
-## Object Detection | Advanced Applications
-
-Object detection is a pivotal computer vision technique that identifies and locates objects in images or videos. It integrates classification and localization to recognize object types and mark positions using bounding boxes. Common applications include autonomous driving, surveillance, and industrial automation.
-
-<figure>
-  <img 
-    width="1920" 
-    src="https://github.com/user-attachments/assets/0d4ebb7d-8f3d-41b1-87dd-15d72b51ab4b" 
-    alt="Object Detection Use Cases using Ultralytics YOLO" 
-    loading="lazy">
-  <figcaption>
-      Object Detection Use Cases using Ultralytics YOLO
-  </figcaption>
-</figure>
-
-### Featured Use Cases:
-    
-Explore key object detection projects we’ve implemented, complete with technical insights:
-
-- **Waste Detection: 🚀** Discover how cutting-edge object detection models like Ultralytics YOLO11 or YOLOv9 revolutionize waste detection for enhanced efficiency. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/VhzkygLZido)
-- **Industrial Package Identification: 📦** Learn how to accurately detect packages in industrial settings using advanced models like Ultralytics YOLO11, YOLOv10, or Ultralytics YOLOv8. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/KGyP10JOwvw)
-
-## Object Tracking | Monitoring Movement
-
-Object tracking monitors object movement across video frames. Starting with detection in the first frame, it tracks positions and interactions in subsequent frames. Common applications include surveillance, traffic monitoring, and sports analysis.
-
-<figure>
-  <img 
-    width="1920" 
-    src="https://github.com/user-attachments/assets/f487a659-deb8-4228-ac33-0a7749522395" 
-    alt="Object Tracking Use Cases using Ultralytics YOLO" 
-    loading="lazy">
-  <figcaption>
-      Object Tracking Use Cases using Ultralytics YOLO
-  </figcaption>
-</figure>
-
-### Featured Use Cases:
-
-Explore our object tracking projects, showcasing technical depth and practical applications:
-
-- **Vehicle Tracking: 🚗** Learn how to track vehicles with high accuracy using YOLOv10, YOLOv9, or YOLOv8, revolutionizing traffic monitoring and fleet management. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/gUMvcrFeVUg)
-
-## Pose Estimation | Key Point Analysis
-
-Pose estimation predicts spatial positions of key points on objects or humans, enabling machines to interpret dynamics. This technique can be used in sports analysis, healthcare, and animation.
-
-<figure>
-  <img 
-    width="1920" 
-    src="https://github.com/user-attachments/assets/bbfbe8f6-5938-4e21-983a-13053bdb09f5" 
-    alt="Pose Estimation Use Cases using Ultralytics YOLO" 
-    loading="lazy">
-  <figcaption>
-      Pose Estimation Use Cases using Ultralytics YOLO
-  </figcaption>
-</figure>
-
-### Featured Use Cases:
-
-Uncover our pose estimation projects with practical applications:
-
-1. **Dog Pose Estimation: 🐾** Learn how to estimate dog poses using Ultralytics YOLO11, unlocking new possibilities in animal behavior analysis. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/PmiWQgdTAuA)
-
-## Object Counting | Automation at Scale
-
-Object counting identifies and tallies objects in images or videos. Leveraging detection or segmentation techniques, it’s widely used in industrial automation, inventory tracking, and crowd management.
-
-<figure>
-  <img 
-    width="1920" 
-    src="https://github.com/user-attachments/assets/c7fdc923-9977-4cf8-b161-41ece0b41d46" 
-    alt="Object Counting Use Cases using Ultralytics YOLO" 
-    loading="lazy">
-  <figcaption>
-      Object Counting Use Cases using Ultralytics YOLO
-  </figcaption>
-</figure>
-
-### Featured Use Cases:
-
-Explore our object counting projects, complete with practical applications:
-
-- **[Apples Counting on Conveyor Belt](usecases/apple-counting.md): 🍎** Learn how to count apples with precision using Ultralytics YOLO models for better inventory management. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/g5Onls24Djg)
-- **[Items Counting in Shopping Trolley](usecases/items-counting.md): 🛒** See how we track and count items in shopping trolleys with cutting-edge detection models, streamlining retail operations. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/eoOkYDJIDHo)
-- **[Bread Counting on Conveyor Belt](usecases/bread-counting.md): 🍞** Discover how to ensure accurate bread counts on conveyor belts with Ultralytics YOLO models, boosting production efficiency. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/1qyxTP2U_Ow)
-
-## Image Segmentation | Precise Pixel-Level Analysis
-
-Image segmentation divides an image into meaningful regions to identify objects or areas of interest. Unlike object detection, it provides a precise outline of objects by labeling individual pixels. This technique is widely used in medical imaging, autonomous vehicles, and scene understanding.
-
-<figure>
-  <img 
-    width="1920" 
-    src="https://github.com/user-attachments/assets/76b31164-a8ad-44a4-a529-9d23f388ebd7" 
-    alt="Instance Segmentation Use Cases using Ultralytics YOLO" 
-    loading="lazy">
-  <figcaption>
-    <a 
-      href="https://docs.ultralytics.com/guides/instance-segmentation-and-tracking/" 
-      target="_blank" 
-      rel="noopener noreferrer">
-      Instance Segmentation Use Cases using Ultralytics YOLO
-    </a>
-  </figcaption>
-</figure>
-
-### Featured Use Cases:
-
-Delve into our instance segmentation projects, featuring technical details and real-world applications:
-
-- **Brain Scan Segmentation: 🧠** Learn how to segment brain scans with precision using models like Ultralytics YOLO11 or YOLOv8, revolutionizing medical imaging analysis. [![Watch Demo](https://img.shields.io/badge/Watch-Demo-blue?style=flat-square "Watch the Demo Video")](https://youtu.be/9F0fry__HPE)
+| Project name                                                                 |                     Code                     | Docs | Description                                                                                                                                                                            |
+|------------------------------------------------------------------------------|:--------------------------------------------:|:----:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Apple Counting on Conveyor Belt](usecases/apple-counting.md)                |      [Code](usecases/apple-counting.md)      |  ✅   | Perform real-time apple counting on conveyor belts using Ultralytics YOLO11. Ideal for automated quality control and inventory management in food processing and packaging industries. |
+| [Birds Tracking in Air](usecases/bird-tracking.md)                           |      [Code](usecases/bird-tracking.md)       |  ✅   | Track multiple birds in flight using advanced YOLO object tracking models to study migration patterns, monitor wildlife behavior, or enhance aviation safety.                          |
+| [Bread Counting in Baking Area on Conveyor Belt](usecases/bread-counting.md) |      [Code](usecases/bread-counting.md)      |  ✅   | Implement real-time bread counting during baking and packaging with YOLO-based systems, optimizing production lines and reducing manual labor.                                         |
+| [Crowd Density Estimation](usecases/crowd-density-estimation.md)             | [Code](usecases/crowd-density-estimation.md) |  ✅   | Estimate crowd density in public areas using computer vision and YOLO detection to improve event management, security, and space utilization.                                          |
+| [Items Counting in Shopping Trolley](usecases/items-counting.md)             |      [Code](usecases/items-counting.md)      |  ✅   | Automatically count retail items in shopping trolleys for self-checkout automation, retail analytics, and loss prevention using YOLO models.                                           |
+| [Items Segmentation in Supermarket](usecases/items-segmentation.md)          |    [Code](usecases/items-segmentation.md)    |  ✅   | Perform item segmentation in supermarkets using YOLO’s instance segmentation for real-time shelf monitoring, inventory tracking, and product placement insights.                       |
+| [Auto Annotation using SAM 2](usecases/sam2-auto-annotation.md)              |   [Code](usecases/sam2-auto-annotation.md)   |  ✅   | Speed up dataset preparation by leveraging Segment Anything Model 2 (SAM2) for automated annotation in retail, manufacturing, and research computer vision workflows.                  |
 
 ## FAQ
 

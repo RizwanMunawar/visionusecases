@@ -109,15 +109,15 @@ figure {
 }
 /* Styles for iframe elements, including those with a src */
 
-/* Styles for announcement bar elements */
-.custom-link {
-  color: #495057; /* General color */
-  text-decoration: none; /* No underline */
-  transition: color 0.3s ease; /* Smooth transition */
-}
 
-.custom-link:hover {
-  color: #ffffff; /* White on hover */
-  text-decoration: underline; /* Optional: underline on hover */
+/* Styles for table */
+.md-typeset table:not([class]) {
+  border: 1.2px solid #f5f5f5;
+  font-size: 16px; /* Increase text size */
 }
-/* Styles for announcement bar elements */
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border: 1.2px solid #f5f5f5;
+  padding: 20px 12px; /* Optional: more space around text */
+}
+/* Styles for table */

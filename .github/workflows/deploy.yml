@@ -1,4 +1,4 @@
-name: Deploy Computer Vision UseCases Docs
+name: Docs Deployment
 
 on:
   push:
